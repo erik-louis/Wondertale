@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
     public Animator animator;
+    public Transform model;
 
     private void Update()
     {
@@ -20,6 +21,8 @@ public class PlayerController : MonoBehaviour
 
         animator.SetFloat("speed", Mathf.Abs(hInput));
         bool isGrounded = Physics.CheckSphere(groundCheck.position, 0.15f, groundLayer);
+
+        animator.SetBool("isGrounded", isGrounded);
         
         if (isGrounded)
         {
@@ -32,6 +35,12 @@ public class PlayerController : MonoBehaviour
         else
         {
             direction.y += gravity * Time.deltaTime;
+        }
+
+        if (hInput != 0)
+        {
+            Quaternion newRotation = Quaternion.LookRotation(new Vector3(hInput, 0, 0));
+            model.rotation = newRotation;
         }
 
         controller.Move(direction * Time.deltaTime);

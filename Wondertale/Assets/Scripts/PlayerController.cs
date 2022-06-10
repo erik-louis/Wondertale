@@ -6,6 +6,7 @@ public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
     private Vector3 direction;
+    private float runSpeed = 1;
     public float speed = 8;
     public float jumpForce = 10;
     public float gravity = -20;
@@ -17,7 +18,7 @@ public class PlayerController : MonoBehaviour
     private void Update()
     {
         float hInput = Input.GetAxis("Horizontal");
-        direction.x = hInput * speed;
+        direction.x = hInput * speed * runSpeed;
 
         animator.SetFloat("speed", Mathf.Abs(hInput));
         bool isGrounded = Physics.CheckSphere(groundCheck.position, 0.15f, groundLayer);
@@ -31,6 +32,19 @@ public class PlayerController : MonoBehaviour
             {
                 direction.y = jumpForce;
             }
+
+            if (Input.GetKey(KeyCode.LeftShift))
+            {
+                runSpeed = 2;
+                animator.SetTrigger("Run");
+            }
+            else
+            {
+                runSpeed = 1;
+                animator.SetTrigger("Walk");
+            }
+
+
         }
         else
         {
@@ -45,5 +59,6 @@ public class PlayerController : MonoBehaviour
 
         controller.Move(direction * Time.deltaTime);
     }
+
 
 }

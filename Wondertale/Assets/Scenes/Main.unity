@@ -1184,7 +1184,7 @@ CharacterController:
   m_StepOffset: 0
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
-  m_Center: {x: 0, y: -0.28, z: 0}
+  m_Center: {x: 0, y: -0.2, z: 0}
 --- !u!114 &589343775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1612,7 +1612,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: 0.0981925, y: 0, z: 0, w: 0.99516743}
-  m_LocalPosition: {x: 0.042267233, y: 3.5499003, z: -9.804492}
+  m_LocalPosition: {x: 2.9446828, y: 3.5499003, z: -9.804492}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1918,7 +1918,7 @@ Transform:
   m_GameObject: {fileID: 1467761644}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 3.23, y: 0.78, z: -0.54}
-  m_LocalScale: {x: 1.582387, y: 1.582387, z: 1.582387}
+  m_LocalScale: {x: 1.582387, y: 1.582387, z: 3.132968}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 8
@@ -2019,7 +2019,7 @@ Transform:
   m_GameObject: {fileID: 1791771805}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1.69, y: 0.78, z: -0.39}
-  m_LocalScale: {x: 0.69764, y: 0.69764, z: 0.69764}
+  m_LocalScale: {x: 0.69764, y: 0.69764, z: 2.6178942}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 7
@@ -2070,7 +2070,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.7680497, y: 1}
+    m_SensorSize: {x: 3.080083, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2087,7 +2087,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1797071904}
   m_LocalRotation: {x: 0.0981925, y: -0, z: -0, w: 0.99516743}
-  m_LocalPosition: {x: 0.042267233, y: 3.5499003, z: -9.804492}
+  m_LocalPosition: {x: 2.9446828, y: 3.5499003, z: -9.804492}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1937154848}
@@ -2229,16 +2229,16 @@ MonoBehaviour:
   m_YDamping: 1
   m_ZDamping: 1
   m_TargetMovementOnly: 1
-  m_ScreenX: 0.5
+  m_ScreenX: 0.37
   m_ScreenY: 0.5
   m_CameraDistance: 9.957677
-  m_DeadZoneWidth: 0.21
+  m_DeadZoneWidth: 0.15
   m_DeadZoneHeight: 0.39
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.97
+  m_SoftZoneWidth: 0.91
   m_SoftZoneHeight: 0.8
-  m_BiasX: 0
+  m_BiasX: 0.023999967
   m_BiasY: 0
   m_CenterOnActivate: 1
   m_GroupFramingMode: 2

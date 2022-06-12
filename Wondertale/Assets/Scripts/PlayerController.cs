@@ -14,6 +14,9 @@ public class PlayerController : MonoBehaviour
     public LayerMask groundLayer;
     public Animator animator;
     public Transform model;
+    
+    
+
 
     private void Update()
     {
@@ -27,7 +30,11 @@ public class PlayerController : MonoBehaviour
         
         if (isGrounded)
         {
-            
+            if (Input.GetKey(KeyCode.LeftControl))
+            {
+                animator.SetTrigger("Crouch");
+            }
+
             if (Input.GetButtonDown("Jump"))
             {
                 direction.y = jumpForce;
@@ -35,11 +42,13 @@ public class PlayerController : MonoBehaviour
 
             if (Input.GetKey(KeyCode.LeftShift))
             {
+               
                 runSpeed = 2;
                 animator.SetTrigger("Run");
             }
             else
             {
+                
                 runSpeed = 1;
                 animator.SetTrigger("Walk");
             }

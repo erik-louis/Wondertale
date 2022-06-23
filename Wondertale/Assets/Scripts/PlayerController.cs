@@ -39,7 +39,7 @@ public class PlayerController : MonoBehaviour
         
         if (isGrounded)
         {
-            if (Input.GetKey(KeyCode.LeftControl))
+            if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.JoystickButton4))
             {
                 animator.SetBool("isCrouching", true);
             }
@@ -53,7 +53,7 @@ public class PlayerController : MonoBehaviour
                 direction.y = jumpForce;
             }
 
-            if (Input.GetKey(KeyCode.LeftShift))
+            if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.JoystickButton2))
             {
                
                 runSpeed = 2;

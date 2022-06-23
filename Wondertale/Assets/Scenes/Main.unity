@@ -1198,8 +1198,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 589343774}
-  speed: 2
-  jumpForce: 8
+  speed: 1.7
+  jumpForce: 7
   gravity: -20
   groundCheck: {fileID: 1161177607}
   groundLayer:

@@ -26,6 +26,10 @@ public class PlayerController : MonoBehaviour
         float vInput = Input.GetAxis("Vertical");
         direction.z = vInput * speed * runSpeed;
 
+        //direction = Vector3.ClampMagnitude(direction, speed * runSpeed);
+        
+        
+
         animator.SetFloat("speed", Mathf.Abs(hInput));
         animator.SetFloat("speedv", Mathf.Abs(vInput));
         bool isGrounded = Physics.CheckSphere(groundCheck.position, 0.15f, groundLayer);
@@ -37,7 +41,11 @@ public class PlayerController : MonoBehaviour
         {
             if (Input.GetKey(KeyCode.LeftControl))
             {
-                animator.SetTrigger("Crouch");
+                animator.SetBool("isCrouching", true);
+            }
+            else
+            {
+                animator.SetBool("isCrouching", false);
             }
 
             if (Input.GetButtonDown("Jump"))
@@ -67,13 +75,13 @@ public class PlayerController : MonoBehaviour
 
         if (hInput != 0)
         {
-            Quaternion newRotation = Quaternion.LookRotation(new Vector3(hInput, 0, 0));
+            Quaternion newRotation = Quaternion.LookRotation(new Vector3(hInput, 0, vInput));
             model.rotation = newRotation;
         }
 
         if (vInput != 0)
         {
-            Quaternion newRotation = Quaternion.LookRotation(new Vector3(0, 0, vInput));
+            Quaternion newRotation = Quaternion.LookRotation(new Vector3(hInput, 0, vInput));
             model.rotation = newRotation;
         }
 

@@ -1327,7 +1327,7 @@ PrefabInstance:
     - target: {fileID: -7511558181221131132, guid: 4446ea89c72e5a945b81b22622e95a42, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 3c48b62af34862048933da5e7dfd8a8f, type: 2}
+      objectReference: {fileID: 2100000, guid: 568e0cdb1430195409db06daf07e2319, type: 2}
     - target: {fileID: 919132149155446097, guid: 4446ea89c72e5a945b81b22622e95a42, type: 3}
       propertyPath: m_Name
       value: Poster

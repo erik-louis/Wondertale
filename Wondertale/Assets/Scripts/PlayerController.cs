@@ -23,8 +23,13 @@ public class PlayerController : MonoBehaviour
         float hInput = Input.GetAxis("Horizontal");
         direction.x = hInput * speed * runSpeed;
 
+        float vInput = Input.GetAxis("Vertical");
+        direction.z = vInput * speed * runSpeed;
+
         animator.SetFloat("speed", Mathf.Abs(hInput));
+        animator.SetFloat("speedv", Mathf.Abs(vInput));
         bool isGrounded = Physics.CheckSphere(groundCheck.position, 0.15f, groundLayer);
+
 
         animator.SetBool("isGrounded", isGrounded);
         
@@ -63,6 +68,12 @@ public class PlayerController : MonoBehaviour
         if (hInput != 0)
         {
             Quaternion newRotation = Quaternion.LookRotation(new Vector3(hInput, 0, 0));
+            model.rotation = newRotation;
+        }
+
+        if (vInput != 0)
+        {
+            Quaternion newRotation = Quaternion.LookRotation(new Vector3(0, 0, vInput));
             model.rotation = newRotation;
         }
 

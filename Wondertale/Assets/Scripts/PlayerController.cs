@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
         
 
         animator.SetFloat("speed", Mathf.Abs(hInput));
-        animator.SetFloat("speedv", Mathf.Abs(vInput));
+        animator.SetFloat("vspeed", Mathf.Abs(vInput));
         bool isGrounded = Physics.CheckSphere(groundCheck.position, 0.15f, groundLayer);
 
 
@@ -58,6 +58,7 @@ public class PlayerController : MonoBehaviour
                
                 runSpeed = 2;
                 animator.SetTrigger("Run");
+                
             }
             else
             {

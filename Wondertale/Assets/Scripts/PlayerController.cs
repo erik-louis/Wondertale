@@ -42,10 +42,12 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.JoystickButton4))
             {
                 animator.SetBool("isCrouching", true);
+                speed = 1;
             }
             else
             {
                 animator.SetBool("isCrouching", false);
+                speed = 1.7f;
             }
 
             if (Input.GetButtonDown("Jump"))

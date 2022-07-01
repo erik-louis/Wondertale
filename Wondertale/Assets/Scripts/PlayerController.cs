@@ -43,6 +43,8 @@ public class PlayerController : MonoBehaviour
             {
                 animator.SetBool("isCrouching", true);
                 speed = 1;
+                runSpeed = 1;
+                
             }
             else
             {

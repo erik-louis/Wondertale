@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5d379fa56189c424dba5af6c9c7f91c4
+guid: 6874c730ffbafd6498d253e085486bea
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable:
@@ -8,7 +8,7 @@ ModelImporter:
     second: Director|Director|Take 001|BaseLayer
   - first:
       74: 4781951162920444690
-    second: Director_Idle_Anim
+    second: Director_Idle_Animation
   - first:
       74: 3410474186512219457
     second: Armature|Director|Take 001|BaseLayer
@@ -41,7 +41,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Director_Idle_Anim
+      name: Director_Idle_Animation
       takeName: Armature|ArmatureAction
       internalID: 0
       firstFrame: 0

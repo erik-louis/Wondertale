@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14b6b429e5bd2624c919348fe6c1bcca, type: 3}
+  m_Name: Convo1
+  m_EditorClassIdentifier: 
+  allLines:
+  - speakerLeft: {fileID: 11400000, guid: 35573b48cc864da4097a525ce29dd815, type: 2}
+    speakerRight: {fileID: 11400000, guid: 40473bda2228e754c8bbc56117f9144d, type: 2}
+    dialogue: Hi, my name is Zuzu, welcome to Zuzu`s Mirage!
+  - speakerLeft: {fileID: 11400000, guid: 40473bda2228e754c8bbc56117f9144d, type: 2}
+    speakerRight: {fileID: 11400000, guid: d3fbfe13dd107c641b0957ea449e6172, type: 2}
+    dialogue: Hello everybody, welcome to my wonderful Circus!
+  - speakerLeft: {fileID: 11400000, guid: 35573b48cc864da4097a525ce29dd815, type: 2}
+    speakerRight: {fileID: 11400000, guid: 40473bda2228e754c8bbc56117f9144d, type: 2}
+    dialogue: This is going to be fun :)

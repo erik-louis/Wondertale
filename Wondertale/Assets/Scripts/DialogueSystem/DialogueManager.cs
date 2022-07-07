@@ -5,8 +5,7 @@ using TMPro;
 public class DialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI speakerName, dialogue, navButtonText;
-    public Image speakerSpriteLeft;
-    public Image speakerSpriteRight;
+    public Image speakerSprite;
 
     private int currentIndex;
     private Conversation currentConvo;
@@ -39,11 +38,14 @@ public class DialogueManager : MonoBehaviour
 
     public void ReadNext()
     {
-        speakerName.text = currentConvo.GetLineByIndex(currentIndex).speakerLeft.GetName();
-        speakerName.text = currentConvo.GetLineByIndex(currentIndex).speakerRight.GetName();
+        speakerName.text = currentConvo.GetLineByIndex(currentIndex).speaker.GetName();
         dialogue.text = currentConvo.GetLineByIndex(currentIndex).dialogue;
-        speakerSpriteLeft.sprite = currentConvo.GetLineByIndex(currentIndex).speakerLeft.GetSprite();
-        speakerSpriteRight.sprite = currentConvo.GetLineByIndex(currentIndex).speakerRight.GetSprite();
+        speakerSprite.sprite = currentConvo.GetLineByIndex(currentIndex).speaker.GetSprite();
+        if (speakerName.text == "Director")
+        {
+            Debug.Log("Test");
+            speakerSprite.transform.position = new Vector3(510, 101, 0);
+        }
         currentIndex++;
     }
 }

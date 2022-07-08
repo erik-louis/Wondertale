@@ -2798,6 +2798,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Tent_Low (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 737746fc6b8ec654399a2de006c52994, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8833444317218217878, guid: 737746fc6b8ec654399a2de006c52994, type: 3}
       propertyPath: m_LocalPosition.y
       value: 1.33

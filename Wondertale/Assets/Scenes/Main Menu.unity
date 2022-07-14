@@ -512,19 +512,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: BG_Music_Main_Menu
-    clip: {fileID: 0}
+  - name: mainmenuV1
+    clip: {fileID: 8300000, guid: 71a5b50e354b3d14f97867088d2b92fe, type: 3}
     mix: {fileID: 24300002, guid: 730bb505e24913b43949e997db098069, type: 2}
-    volume: 0
-    pitch: 0
+    volume: 1
+    pitch: 1
     loop: 1
-    source: {fileID: 0}
-  - name: 
-    clip: {fileID: 0}
-    mix: {fileID: 0}
-    volume: 0
-    pitch: 0
-    loop: 0
     source: {fileID: 0}
 --- !u!1 &833730166
 GameObject:

@@ -8143,6 +8143,7 @@ MonoBehaviour:
     m_Bits: 64
   animator: {fileID: 1705792696}
   model: {fileID: 1705792697}
+  navButton: {fileID: 825109310}
 --- !u!143 &1705792699
 CharacterController:
   m_ObjectHideFlags: 0
@@ -8819,7 +8820,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 39.6, y: -322}
+  m_AnchoredPosition: {x: 39.600098, y: -322}
   m_SizeDelta: {x: -1000, y: 314.2787}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1829015001
@@ -8877,7 +8878,6 @@ MonoBehaviour:
   navButtonText: {fileID: 1196229395}
   speakerSprite: {fileID: 1223105406}
   speakerSpriteObject: {fileID: 1223105404}
-  dialogueBox: {fileID: 1829014999}
 --- !u!95 &1829015004
 Animator:
   serializedVersion: 3

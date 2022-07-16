@@ -17,6 +17,7 @@ public class PlayerController : MonoBehaviour
     public Animator animator;
     public Transform model;
     public static bool playerControlsEnabled = true;
+    public GameObject navButton;
 
 
     private void Update()
@@ -114,5 +115,12 @@ public class PlayerController : MonoBehaviour
 
 
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Dialogue")
 
+        {
+            navButton.SetActive(true);
+        }
+    }
 }

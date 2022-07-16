@@ -15,8 +15,10 @@ public class DialogueManager : MonoBehaviour
     private Animator anim;
     private Coroutine typing;
 
+
     private void Awake()
     {
+        
         //make sure that only one DialogueManager is active in the scene
         if (instance == null)
         {

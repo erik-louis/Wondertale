@@ -4048,7 +4048,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &825109311
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8877,6 +8877,7 @@ MonoBehaviour:
   navButtonText: {fileID: 1196229395}
   speakerSprite: {fileID: 1223105406}
   speakerSpriteObject: {fileID: 1223105404}
+  dialogueBox: {fileID: 1829014999}
 --- !u!95 &1829015004
 Animator:
   serializedVersion: 3

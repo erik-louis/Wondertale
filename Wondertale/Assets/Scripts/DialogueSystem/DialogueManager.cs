@@ -32,6 +32,7 @@ public class DialogueManager : MonoBehaviour
     // call DialogueManager from anywhere within the game
     public static void StartConversation(Conversation convo)
     {
+        PlayerController.playerControlsEnabled = false;
         instance.anim.SetBool("isOpen", true);
         instance.currentIndex = 0;
         instance.currentConvo = convo;
@@ -44,8 +45,10 @@ public class DialogueManager : MonoBehaviour
 
     public void ReadNext()
     {
+        // After last dialogue line, close Box and enable Player Controls
         if (currentIndex > currentConvo.GetLength())
         {
+            PlayerController.playerControlsEnabled = true;
             instance.anim.SetBool("isOpen", false);
             return;
         }

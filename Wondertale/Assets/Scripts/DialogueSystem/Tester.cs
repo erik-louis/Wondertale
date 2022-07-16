@@ -9,4 +9,13 @@ public class Tester : MonoBehaviour
     {
         DialogueManager.StartConversation(convo);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+
+        {
+            StartConvo();
+        }
+    }
 }

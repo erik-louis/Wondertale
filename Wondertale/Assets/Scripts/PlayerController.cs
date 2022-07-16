@@ -6,92 +6,113 @@ public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
     private Vector3 direction;
-    private float runSpeed = 1;
-    public float speed = 8;
-    public float jumpForce = 10;
+    public float runSpeed;
+    public float speed;
+    public float rotationSpeed;
+    public float jumpForce = 7;
     public float gravity = -20;
+    private bool isCrawling = false;
     public Transform groundCheck;
     public LayerMask groundLayer;
     public Animator animator;
     public Transform model;
-    
-    
+    public static bool playerControlsEnabled = true;
 
 
     private void Update()
     {
-        float hInput = Input.GetAxis("Horizontal");
-        direction.x = hInput * speed * runSpeed;
-
-        float vInput = Input.GetAxis("Vertical");
-        direction.z = vInput * speed * runSpeed;
-
-        //direction = Vector3.ClampMagnitude(direction, speed * runSpeed);
-        
-        
-
-        animator.SetFloat("speed", Mathf.Abs(hInput));
-        animator.SetFloat("vspeed", Mathf.Abs(vInput));
-        bool isGrounded = Physics.CheckSphere(groundCheck.position, 0.15f, groundLayer);
-
-
-        animator.SetBool("isGrounded", isGrounded);
-        
-        if (isGrounded)
+        //Player Movement when no Dialogue showing
+        if (playerControlsEnabled)
         {
-            if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.JoystickButton4))
+            float hInput = Input.GetAxis("Horizontal");
+            float vInput = Input.GetAxis("Vertical");
+            direction.x = hInput * speed * runSpeed;
+            direction.z = vInput * speed * runSpeed;
+
+            Vector3 movementDirection = new Vector3(hInput, 0, vInput);
+            movementDirection.Normalize();
+
+            transform.Translate(movementDirection * speed * runSpeed * Time.deltaTime, Space.World);
+
+            bool isGrounded = Physics.CheckSphere(groundCheck.position, 0.15f, groundLayer);
+
+            animator.SetBool("isGrounded", isGrounded);
+
+            if (isGrounded)
             {
-                animator.SetBool("isCrouching", true);
-                speed = 1;
-                runSpeed = 1;
-                
+                if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.JoystickButton4))
+                {
+                    animator.SetBool("isCrouching", true);
+                    speed = 1;
+                    runSpeed = 1;
+                    isCrawling = true;
+
+                }
+                else
+                {
+                    animator.SetBool("isCrouching", false);
+                    speed = 1.7f;
+                    isCrawling = false;
+                }
+
+                if (Input.GetButtonDown("Jump"))
+                {
+                    direction.y = jumpForce;
+                }
+
+                if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.JoystickButton2))
+                {
+
+                    runSpeed = 2;
+                    animator.SetTrigger("Run");
+
+                    if (isCrawling == true)
+                    {
+                        runSpeed = 1;
+                    }
+                    else
+                    {
+                        runSpeed = 2;
+                    }
+
+                }
+                else
+                {
+
+                    runSpeed = 1;
+                    animator.SetTrigger("Walk");
+                }
+
+
             }
             else
             {
-                animator.SetBool("isCrouching", false);
-                speed = 1.7f;
+                direction.y += gravity * Time.deltaTime;
             }
 
-            if (Input.GetButtonDown("Jump"))
+            if (movementDirection != Vector3.zero)
             {
-                direction.y = jumpForce;
-            }
-
-            if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.JoystickButton2))
-            {
-               
-                runSpeed = 2;
-                animator.SetTrigger("Run");
-                
+                animator.SetBool("isMoving", true);
+                Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
+                transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
             }
             else
             {
-                
-                runSpeed = 1;
-                animator.SetTrigger("Walk");
+                animator.SetBool("isMoving", false);
             }
 
-
+            controller.Move(direction * Time.deltaTime);
         }
+
+        //play Idle Animation when Dialogue is on (playerControlsEnabled = false)
         else
         {
-            direction.y += gravity * Time.deltaTime;
+            animator.SetBool("isMoving", false);
+            animator.SetBool("isGrounded", true);
+            
         }
 
-        if (hInput != 0)
-        {
-            Quaternion newRotation = Quaternion.LookRotation(new Vector3(hInput, 0, vInput));
-            model.rotation = newRotation;
-        }
 
-        if (vInput != 0)
-        {
-            Quaternion newRotation = Quaternion.LookRotation(new Vector3(hInput, 0, vInput));
-            model.rotation = newRotation;
-        }
-
-        controller.Move(direction * Time.deltaTime);
     }
-
 
 }

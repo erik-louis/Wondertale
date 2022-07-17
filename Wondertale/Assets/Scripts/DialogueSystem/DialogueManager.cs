@@ -14,7 +14,7 @@ public class DialogueManager : MonoBehaviour
     private static DialogueManager instance;
     private Animator anim;
     private Coroutine typing;
-
+    
 
     private void Awake()
     {
@@ -50,8 +50,8 @@ public class DialogueManager : MonoBehaviour
         // After last dialogue line, close Box and enable Player Controls
         if (currentIndex > currentConvo.GetLength())
         {
-            PlayerController.playerControlsEnabled = true;
             instance.anim.SetBool("isOpen", false);
+            StartCoroutine(EnableMovement());
             return;
         }
 
@@ -110,6 +110,12 @@ public class DialogueManager : MonoBehaviour
         }
 
         typing = null;
+    }
+
+    private IEnumerator EnableMovement()
+    {
+        yield return new WaitForSeconds(0.02f);
+        PlayerController.playerControlsEnabled = true;
     }
 
 

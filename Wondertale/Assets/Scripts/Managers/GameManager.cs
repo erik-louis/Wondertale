@@ -5,13 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] int currentLevelIndex = 0;
-    
+    [SerializeField] int currentLevelIndex;
 
+   
     private void Awake()
     {
-       DontDestroyOnLoad(gameObject);
+        currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
     }
+
     public void LoadNextLevel()
     {
         currentLevelIndex += 1;

@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Wondertale_Logo_Intro.unity
+    guid: 4bd731b611d695e4895596d49f56a45a
+  - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 63ae462ad1885a4409e63130e8ff6b98
   - enabled: 1

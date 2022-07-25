@@ -117,10 +117,21 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
+        // triggers dialogue
         if (other.gameObject.tag == "Dialogue")
 
         {
             navButton.SetActive(true);
         }
+
+        // triggers death animation in stomping minigame
+        if (other.gameObject.tag == "Foot")
+
+        {
+            playerControlsEnabled = false;
+            animator.SetBool("isFlat", true);
+        }
     }
+
+    
 }

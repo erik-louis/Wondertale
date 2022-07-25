@@ -17,9 +17,5 @@ public class Stomper : MonoBehaviour
         myAnim.Play("WaitTime", -1, animationOffset);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+    
 }

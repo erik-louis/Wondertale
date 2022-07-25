@@ -130,6 +130,8 @@ public class PlayerController : MonoBehaviour
         {
             playerControlsEnabled = false;
             animator.SetBool("isFlat", true);
+            transform.position = new Vector3(transform.position.x, 0.54f, transform.position.z);
+
         }
     }
 

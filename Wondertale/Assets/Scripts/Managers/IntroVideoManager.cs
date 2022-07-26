@@ -24,7 +24,7 @@ public class IntroVideoManager : MonoBehaviour
         } 
         while (--secondsLeft > 0);
 
-        SceneManager.LoadScene("Main Menu");
+        SceneManager.LoadScene("StartScreen");
     }
 
     /*void OnGUI()

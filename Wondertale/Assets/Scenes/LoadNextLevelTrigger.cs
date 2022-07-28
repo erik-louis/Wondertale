@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class LoadNextLevelTrigger : MonoBehaviour
 {
     [SerializeField] int currentLevelIndex;
+    [SerializeField] Animator transition;
+    public float loadingTime = 1f;
 
     private void Awake()
     {
@@ -15,7 +17,7 @@ public class LoadNextLevelTrigger : MonoBehaviour
     public void LoadNextLevel()
     {
         currentLevelIndex += 1;
-        SceneManager.LoadScene(currentLevelIndex);
+        StartCoroutine(LoadScene(currentLevelIndex));
     }
 
     private void OnTriggerEnter(Collider other)
@@ -25,5 +27,21 @@ public class LoadNextLevelTrigger : MonoBehaviour
         {
             LoadNextLevel();
         }
+    }
+
+    IEnumerator LoadScene(int currentLevelIndex)
+    {
+        transition.SetTrigger("StartFade");
+
+        yield return new WaitForSeconds(loadingTime);
+
+        SceneManager.LoadScene(currentLevelIndex);
+
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+        Debug.Log("Exit");
     }
 }

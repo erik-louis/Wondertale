@@ -15,6 +15,12 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: 63ae462ad1885a4409e63130e8ff6b98
   - enabled: 1
+    path: Assets/Scenes/Intro_Black.unity
+    guid: 88ffb74443911144f98a74092986cd13
+  - enabled: 1
+    path: Assets/Scenes/Intro_Cutscene.unity
+    guid: 22c48110815892146b76e0597f941bf4
+  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1

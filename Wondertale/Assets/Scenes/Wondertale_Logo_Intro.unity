@@ -524,7 +524,7 @@ GameObject:
   - component: {fileID: 1453402974}
   - component: {fileID: 1453402973}
   m_Layer: 0
-  m_Name: IntroVideoManager
+  m_Name: VideoManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -542,6 +542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24585b4c915e0da4db46648c13884860, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  timer: 6
 --- !u!4 &1453402974
 Transform:
   m_ObjectHideFlags: 0

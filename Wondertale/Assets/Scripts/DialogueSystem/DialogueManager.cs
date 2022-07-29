@@ -56,8 +56,10 @@ public class DialogueManager : MonoBehaviour
             // Load next Scene after Intro Dialogue Scene
             if (speakerName.text == "Doctor")
             {
+                PlayerController.playerControlsEnabled = true;
                 currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
                 SceneManager.LoadScene(currentLevelIndex += 1);
+                return;
             }
 
             instance.anim.SetBool("isOpen", false);

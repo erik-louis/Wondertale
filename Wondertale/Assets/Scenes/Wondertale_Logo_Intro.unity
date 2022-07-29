@@ -542,6 +542,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24585b4c915e0da4db46648c13884860, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevelIndex: 0
   timer: 6
 --- !u!4 &1453402974
 Transform:
@@ -707,10 +708,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 564639208226804179, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
       propertyPath: sounds.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 564639208226804179, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
       propertyPath: sounds.Array.data[0].mix
+      value: 
+      objectReference: {fileID: 24300002, guid: 730bb505e24913b43949e997db098069, type: 2}
+    - target: {fileID: 564639208226804179, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
+      propertyPath: sounds.Array.data[1].mix
       value: 
       objectReference: {fileID: 24300002, guid: 730bb505e24913b43949e997db098069, type: 2}
     - target: {fileID: 564639208226804179, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
@@ -726,11 +731,31 @@ PrefabInstance:
       value: mainmenuV1
       objectReference: {fileID: 0}
     - target: {fileID: 564639208226804179, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
+      propertyPath: sounds.Array.data[1].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e88ea8f062d6c384b874ddca1514236e, type: 3}
+    - target: {fileID: 564639208226804179, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
+      propertyPath: sounds.Array.data[1].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 564639208226804179, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
+      propertyPath: sounds.Array.data[1].name
+      value: Hospital
+      objectReference: {fileID: 0}
+    - target: {fileID: 564639208226804179, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
       propertyPath: sounds.Array.data[0].pitch
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 564639208226804179, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
+      propertyPath: sounds.Array.data[1].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 564639208226804179, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
       propertyPath: sounds.Array.data[0].volume
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 564639208226804179, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
+      propertyPath: sounds.Array.data[1].volume
       value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []

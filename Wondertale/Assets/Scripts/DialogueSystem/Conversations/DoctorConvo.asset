@@ -10,8 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14b6b429e5bd2624c919348fe6c1bcca, type: 3}
-  m_Name: Convo3
+  m_Name: DoctorConvo
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: 0b713e04df3fc5845964f523861514d3, type: 2}
-    dialogue: Test Text
+    dialogue: 'No, not good!
+
+      Let us try this instead!'
+  - speaker: {fileID: 11400000, guid: 0b713e04df3fc5845964f523861514d3, type: 2}
+    dialogue: ...
+  - speaker: {fileID: 11400000, guid: 0b713e04df3fc5845964f523861514d3, type: 2}
+    dialogue: ...
+  - speaker: {fileID: 11400000, guid: 0b713e04df3fc5845964f523861514d3, type: 2}
+    dialogue: Whew, we managed to stabilze her!

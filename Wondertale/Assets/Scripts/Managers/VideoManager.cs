@@ -13,6 +13,7 @@ public class VideoManager : MonoBehaviour
     private void Awake()
     {
         currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
+        FindObjectOfType<AudioManager>().StopPlaying("Hospital");
     }
     void Start()
     {

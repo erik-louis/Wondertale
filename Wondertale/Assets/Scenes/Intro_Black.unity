@@ -1498,6 +1498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3493a2b535168634b9749163d73de683, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevelIndex: 0
   speakerName: {fileID: 508710948}
   dialogue: {fileID: 1312259674}
   navButtonText: {fileID: 1121722931}
@@ -1603,7 +1604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d870b96a166a86f4fa581389aa715da4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  convo: {fileID: 11400000, guid: aef0ebf6735f94d4ba0cd68d35a1860c, type: 2}
+  convo: {fileID: 11400000, guid: 5a11518231f20544dae0396911cb51d5, type: 2}
 --- !u!1001 &7376473605575572610
 PrefabInstance:
   m_ObjectHideFlags: 0

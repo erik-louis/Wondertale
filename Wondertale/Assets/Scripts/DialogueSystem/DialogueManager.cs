@@ -2,9 +2,12 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
+    [SerializeField] int currentLevelIndex;
+
     public TextMeshProUGUI speakerName, dialogue, navButtonText;
     public Image speakerSprite;
     public GameObject speakerSpriteObject;
@@ -50,12 +53,20 @@ public class DialogueManager : MonoBehaviour
         // After last dialogue line, close Box and enable Player Controls
         if (currentIndex > currentConvo.GetLength())
         {
+            // Load next Scene after Intro Dialogue Scene
+            if (speakerName.text == "Doctor")
+            {
+                currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
+                SceneManager.LoadScene(currentLevelIndex += 1);
+            }
+
             instance.anim.SetBool("isOpen", false);
             StartCoroutine(EnableMovement());
             return;
+
         }
 
-        speakerName.text = currentConvo.GetLineByIndex(currentIndex).speaker.GetName();
+            speakerName.text = currentConvo.GetLineByIndex(currentIndex).speaker.GetName();
 
         if (typing == null)
         {

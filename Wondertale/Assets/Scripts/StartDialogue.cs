@@ -10,4 +10,6 @@ public class StartDialogue : MonoBehaviour
     {
         DialogueManager.StartConversation(convo);
     }
+
+   
 }

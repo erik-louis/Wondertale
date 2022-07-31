@@ -21,6 +21,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro_Cutscene.unity
     guid: 22c48110815892146b76e0597f941bf4
   - enabled: 1
+    path: Assets/Scenes/Corridor.unity
+    guid: ac755156605af9847809673c664cf5cf
+  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1

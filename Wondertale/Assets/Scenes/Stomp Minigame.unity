@@ -6589,7 +6589,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7376473604295150230, guid: ab5669463343f8448ba3729552aaed61, type: 3}
       propertyPath: currentLevelIndex
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7376473604295150234, guid: ab5669463343f8448ba3729552aaed61, type: 3}
       propertyPath: m_RootOrder
@@ -13688,6 +13688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3493a2b535168634b9749163d73de683, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevelIndex: 0
   speakerName: {fileID: 268456663}
   dialogue: {fileID: 1771960466}
   navButtonText: {fileID: 1196229395}

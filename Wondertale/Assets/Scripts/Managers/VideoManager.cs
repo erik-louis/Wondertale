@@ -34,11 +34,12 @@ public class VideoManager : MonoBehaviour
         SceneManager.LoadScene(currentLevelIndex +=1);
     }
 
-    void OnGUI()
+    // show Timer on top left of Screen
+    /*void OnGUI()
     {
         if (loadingStarted)
             GUI.Label(new Rect(0, 0, 100, 20), secondsLeft.ToString());
     }
-    
+    */
     
 }

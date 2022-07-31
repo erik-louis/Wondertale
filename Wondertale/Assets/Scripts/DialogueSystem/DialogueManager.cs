@@ -92,7 +92,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            speakerSpriteObject.GetComponent<RectTransform>().anchoredPosition = new Vector3(-709, 151, 0);
+            speakerSpriteObject.GetComponent<RectTransform>().anchoredPosition = new Vector3(-650, 155, 0);
         }
         
 

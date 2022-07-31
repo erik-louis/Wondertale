@@ -10,12 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 14b6b429e5bd2624c919348fe6c1bcca, type: 3}
-  m_Name: Convo1
+  m_Name: Entrance
   m_EditorClassIdentifier: 
   allLines:
   - speaker: {fileID: 11400000, guid: 35573b48cc864da4097a525ce29dd815, type: 2}
-    dialogue: Hi, my name is Zuzu, welcome to Zuzu`s Mirage!
-  - speaker: {fileID: 11400000, guid: d3fbfe13dd107c641b0957ea449e6172, type: 2}
-    dialogue: Hello everybody, welcome to my wonderful Circus!
+    dialogue: What happened? Where am i?
   - speaker: {fileID: 11400000, guid: 35573b48cc864da4097a525ce29dd815, type: 2}
-    dialogue: This is going to be fun :)
+    dialogue: ...
+  - speaker: {fileID: 11400000, guid: 35573b48cc864da4097a525ce29dd815, type: 2}
+    dialogue: Looks like a circus, but how did i end up here?
+  - speaker: {fileID: 11400000, guid: 35573b48cc864da4097a525ce29dd815, type: 2}
+    dialogue: ...
+  - speaker: {fileID: 11400000, guid: 35573b48cc864da4097a525ce29dd815, type: 2}
+    dialogue: Speculating won't do no good, i'll have to see where this path leads
+      to.

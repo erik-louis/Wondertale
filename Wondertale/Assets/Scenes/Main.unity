@@ -5984,7 +5984,7 @@ RectTransform:
   m_GameObject: {fileID: 1223105404}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 6.9587283, y: 6.436893, z: 6.436893}
+  m_LocalScale: {x: 7.3762517, y: 6.8231063, z: 6.8231063}
   m_Children: []
   m_Father: {fileID: 1829015000}
   m_RootOrder: 2
@@ -8873,6 +8873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3493a2b535168634b9749163d73de683, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  currentLevelIndex: 0
   speakerName: {fileID: 268456663}
   dialogue: {fileID: 1771960466}
   navButtonText: {fileID: 1196229395}
@@ -10434,6 +10435,10 @@ PrefabInstance:
     - target: {fileID: 7376473604295150225, guid: ab5669463343f8448ba3729552aaed61, type: 3}
       propertyPath: m_Name
       value: LevelLoader
+      objectReference: {fileID: 0}
+    - target: {fileID: 7376473604295150225, guid: ab5669463343f8448ba3729552aaed61, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7376473604295150228, guid: ab5669463343f8448ba3729552aaed61, type: 3}
       propertyPath: m_Enabled

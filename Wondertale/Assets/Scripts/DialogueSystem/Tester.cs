@@ -16,6 +16,7 @@ public class Tester : MonoBehaviour
 
         {
             StartConvo();
+            Destroy(gameObject);
         }
     }
 }

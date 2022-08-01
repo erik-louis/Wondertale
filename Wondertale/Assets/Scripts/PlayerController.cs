@@ -9,14 +9,15 @@ public class PlayerController : MonoBehaviour
     public float runSpeed;
     public float speed;
     public float rotationSpeed;
-    public float jumpForce = 7;
-    public float gravity = -20;
+    public float jumpForce;
+    public float gravity;
     private bool isCrawling = false;
     public Transform groundCheck;
     public LayerMask groundLayer;
     public Animator animator;
     public Transform model;
     public static bool playerControlsEnabled = true;
+    public GameObject navButton;
 
 
     private void Update()
@@ -43,21 +44,26 @@ public class PlayerController : MonoBehaviour
                 if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.JoystickButton4))
                 {
                     animator.SetBool("isCrouching", true);
-                    speed = 1;
+                    speed = 0.7f;
                     runSpeed = 1;
                     isCrawling = true;
+                    controller.center = new Vector3(0, 0.35f, 0);
+                    controller.height = 0.67f;
 
                 }
                 else
                 {
                     animator.SetBool("isCrouching", false);
-                    speed = 1.7f;
+                    speed = 1;
                     isCrawling = false;
+                    controller.center = new Vector3(0, 0.72f, 0);
+                    controller.height = 1.43f;
                 }
 
                 if (Input.GetButtonDown("Jump"))
                 {
                     direction.y = jumpForce;
+                    
                 }
 
                 if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.JoystickButton2))
@@ -114,5 +120,27 @@ public class PlayerController : MonoBehaviour
 
 
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        // triggers dialogue
+        if (other.gameObject.tag == "Dialogue")
 
+        {
+            navButton.SetActive(true);
+        }
+
+        // triggers death animation in stomping minigame
+        if (other.gameObject.tag == "Foot")
+
+        {
+            playerControlsEnabled = false;
+            animator.SetBool("isFlat", true);
+            transform.position = new Vector3(transform.position.x, 0.54f, transform.position.z);
+
+        }
+
+       
+    }
+
+    
 }

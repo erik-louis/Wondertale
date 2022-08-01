@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<<< HEAD:Wondertale/Assets/Materials/Textures/Environment/HatsandSticks/M_MagicWand_MaskMap.png.meta
 guid: 6815d679b491cf5409cf238e7d598d93
+========
+guid: eddca1feaa853d74a8b34c45379ea814
+>>>>>>>> Erik2:Wondertale/Assets/Materials/Textures/Environment/HatsandSticks/StartScreen.jpg.meta
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}

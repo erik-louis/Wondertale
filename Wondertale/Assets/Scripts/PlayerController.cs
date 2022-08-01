@@ -56,13 +56,14 @@ public class PlayerController : MonoBehaviour
                     animator.SetBool("isCrouching", false);
                     speed = 1;
                     isCrawling = false;
-                    controller.center = new Vector3(0, 0.8f, 0);
+                    controller.center = new Vector3(0, 0.72f, 0);
                     controller.height = 1.43f;
                 }
 
                 if (Input.GetButtonDown("Jump"))
                 {
                     direction.y = jumpForce;
+                    
                 }
 
                 if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.JoystickButton2))
@@ -138,13 +139,7 @@ public class PlayerController : MonoBehaviour
 
         }
 
-        if (other.gameObject.tag == "Border")
-
-        {
-            //transform.position = new Vector3(transform.position.x, transform.position.x, -10);
-            Debug.Log("Test");
-            
-        }
+       
     }
 
     

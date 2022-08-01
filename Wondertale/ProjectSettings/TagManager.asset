@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Dialogue
   - Foot
+  - Border
   layers:
   - Default
   - TransparentFX

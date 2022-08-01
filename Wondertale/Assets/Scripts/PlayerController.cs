@@ -137,6 +137,14 @@ public class PlayerController : MonoBehaviour
             transform.position = new Vector3(transform.position.x, 0.54f, transform.position.z);
 
         }
+
+        if (other.gameObject.tag == "Border")
+
+        {
+            //transform.position = new Vector3(transform.position.x, transform.position.x, -10);
+            Debug.Log("Test");
+            
+        }
     }
 
     

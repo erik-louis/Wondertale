@@ -3,10 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags:
   - Dialogue
   - Foot
   - Border
+=======
+  tags: []
+>>>>>>> origin/Rico2
   layers:
   - Default
   - TransparentFX

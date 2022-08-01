@@ -2,12 +2,9 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 public class DialogueManager : MonoBehaviour
 {
-    [SerializeField] int currentLevelIndex;
-
     public TextMeshProUGUI speakerName, dialogue, navButtonText;
     public Image speakerSprite;
     public GameObject speakerSpriteObject;
@@ -17,11 +14,9 @@ public class DialogueManager : MonoBehaviour
     private static DialogueManager instance;
     private Animator anim;
     private Coroutine typing;
-    
 
     private void Awake()
     {
-        
         //make sure that only one DialogueManager is active in the scene
         if (instance == null)
         {
@@ -37,7 +32,6 @@ public class DialogueManager : MonoBehaviour
     // call DialogueManager from anywhere within the game
     public static void StartConversation(Conversation convo)
     {
-        PlayerController.playerControlsEnabled = false;
         instance.anim.SetBool("isOpen", true);
         instance.currentIndex = 0;
         instance.currentConvo = convo;
@@ -50,25 +44,13 @@ public class DialogueManager : MonoBehaviour
 
     public void ReadNext()
     {
-        // After last dialogue line, close Box and enable Player Controls
         if (currentIndex > currentConvo.GetLength())
         {
-            // Load next Scene after Intro Dialogue Scene
-            if (speakerName.text == "Doctor")
-            {
-                PlayerController.playerControlsEnabled = true;
-                currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
-                SceneManager.LoadScene(currentLevelIndex += 1);
-                return;
-            }
-
             instance.anim.SetBool("isOpen", false);
-            StartCoroutine(EnableMovement());
             return;
-
         }
 
-            speakerName.text = currentConvo.GetLineByIndex(currentIndex).speaker.GetName();
+        speakerName.text = currentConvo.GetLineByIndex(currentIndex).speaker.GetName();
 
         if (typing == null)
         {
@@ -92,7 +74,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
-            speakerSpriteObject.GetComponent<RectTransform>().anchoredPosition = new Vector3(-650, 155, 0);
+            speakerSpriteObject.GetComponent<RectTransform>().anchoredPosition = new Vector3(-709, 151, 0);
         }
         
 
@@ -123,12 +105,6 @@ public class DialogueManager : MonoBehaviour
         }
 
         typing = null;
-    }
-
-    private IEnumerator EnableMovement()
-    {
-        yield return new WaitForSeconds(0.02f);
-        PlayerController.playerControlsEnabled = true;
     }
 
 

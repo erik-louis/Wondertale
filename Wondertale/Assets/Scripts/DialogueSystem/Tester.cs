@@ -9,6 +9,7 @@ public class Tester : MonoBehaviour
     {
         DialogueManager.StartConversation(convo);
     }
+<<<<<<< HEAD
 
     private void OnTriggerEnter(Collider other)
     {
@@ -19,4 +20,6 @@ public class Tester : MonoBehaviour
             Destroy(gameObject);
         }
     }
+=======
+>>>>>>> origin/Rico2
 }

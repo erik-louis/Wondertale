@@ -6,41 +6,51 @@ public class PlayerController : MonoBehaviour
 {
     public CharacterController controller;
     private Vector3 direction;
+<<<<<<< HEAD
     public float runSpeed;
     public float speed;
     public float rotationSpeed;
     public float jumpForce;
     public float gravity;
     private bool isCrawling = false;
+=======
+    private float runSpeed = 1;
+    public float speed = 8;
+    public float jumpForce = 10;
+    public float gravity = -20;
+>>>>>>> origin/Rico2
     public Transform groundCheck;
     public LayerMask groundLayer;
     public Animator animator;
     public Transform model;
-    public static bool playerControlsEnabled = true;
-    public GameObject navButton;
+    
+    
 
 
     private void Update()
     {
-        //Player Movement when no Dialogue showing
-        if (playerControlsEnabled)
+        float hInput = Input.GetAxis("Horizontal");
+        direction.x = hInput * speed * runSpeed;
+
+        float vInput = Input.GetAxis("Vertical");
+        direction.z = vInput * speed * runSpeed;
+
+        //direction = Vector3.ClampMagnitude(direction, speed * runSpeed);
+        
+        
+
+        animator.SetFloat("speed", Mathf.Abs(hInput));
+        animator.SetFloat("vspeed", Mathf.Abs(vInput));
+        bool isGrounded = Physics.CheckSphere(groundCheck.position, 0.15f, groundLayer);
+
+
+        animator.SetBool("isGrounded", isGrounded);
+        
+        if (isGrounded)
         {
-            float hInput = Input.GetAxis("Horizontal");
-            float vInput = Input.GetAxis("Vertical");
-            direction.x = hInput * speed * runSpeed;
-            direction.z = vInput * speed * runSpeed;
-
-            Vector3 movementDirection = new Vector3(hInput, 0, vInput);
-            movementDirection.Normalize();
-
-            transform.Translate(movementDirection * speed * runSpeed * Time.deltaTime, Space.World);
-
-            bool isGrounded = Physics.CheckSphere(groundCheck.position, 0.15f, groundLayer);
-
-            animator.SetBool("isGrounded", isGrounded);
-
-            if (isGrounded)
+            if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.JoystickButton4))
             {
+<<<<<<< HEAD
                 if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.JoystickButton4))
                 {
                     animator.SetBool("isCrouching", true);
@@ -90,57 +100,63 @@ public class PlayerController : MonoBehaviour
                 }
 
 
+=======
+                animator.SetBool("isCrouching", true);
+                speed = 1;
+                runSpeed = 1;
+                
+>>>>>>> origin/Rico2
             }
             else
             {
-                direction.y += gravity * Time.deltaTime;
+                animator.SetBool("isCrouching", false);
+                speed = 1.7f;
             }
 
-            if (movementDirection != Vector3.zero)
+            if (Input.GetButtonDown("Jump"))
             {
-                animator.SetBool("isMoving", true);
-                Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
-                transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+                direction.y = jumpForce;
+            }
+
+            if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.JoystickButton2))
+            {
+               
+                runSpeed = 2;
+                animator.SetTrigger("Run");
+                
             }
             else
             {
-                animator.SetBool("isMoving", false);
+                
+                runSpeed = 1;
+                animator.SetTrigger("Walk");
             }
 
-            controller.Move(direction * Time.deltaTime);
+
         }
-
-        //play Idle Animation when Dialogue is on (playerControlsEnabled = false)
         else
         {
-            animator.SetBool("isMoving", false);
-            animator.SetBool("isGrounded", true);
-            
+            direction.y += gravity * Time.deltaTime;
         }
 
-
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        // triggers dialogue
-        if (other.gameObject.tag == "Dialogue")
-
+        if (hInput != 0)
         {
-            navButton.SetActive(true);
+            Quaternion newRotation = Quaternion.LookRotation(new Vector3(hInput, 0, vInput));
+            model.rotation = newRotation;
         }
 
-        // triggers death animation in stomping minigame
-        if (other.gameObject.tag == "Foot")
-
+        if (vInput != 0)
         {
-            playerControlsEnabled = false;
-            animator.SetBool("isFlat", true);
-            transform.position = new Vector3(transform.position.x, 0.54f, transform.position.z);
-
+            Quaternion newRotation = Quaternion.LookRotation(new Vector3(hInput, 0, vInput));
+            model.rotation = newRotation;
         }
 
+<<<<<<< HEAD
        
+=======
+        controller.Move(direction * Time.deltaTime);
+>>>>>>> origin/Rico2
     }
 
-    
+
 }

@@ -10,9 +10,6 @@ public class StartDialogue : MonoBehaviour
     {
         DialogueManager.StartConversation(convo);
 
-
-        FindObjectOfType<AudioManager>().StopPlaying("mainmenuV1");
-        FindObjectOfType<AudioManager>().Play("Hospital");
     }
 
    

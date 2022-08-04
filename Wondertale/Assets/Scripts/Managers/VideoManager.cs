@@ -13,7 +13,7 @@ public class VideoManager : MonoBehaviour
     private void Awake()
     {
         currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
-        FindObjectOfType<AudioManager>().StopPlaying("Hospital");
+        
     }
     void Start()
     {
@@ -32,6 +32,7 @@ public class VideoManager : MonoBehaviour
         while (--secondsLeft > 0);
 
         SceneManager.LoadScene(currentLevelIndex +=1);
+        
     }
 
     // show Timer on top left of Screen

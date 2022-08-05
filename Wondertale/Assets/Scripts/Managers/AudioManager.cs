@@ -2,12 +2,16 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
 
     public static AudioManager instance;
+
+    bool isDone = false;
+
 
     // Start is called before the first frame update
     void Awake()
@@ -35,43 +39,10 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 0)
-        {
             Play("mainmenuV1");
-        }
-
     }
 
-    private void Update()
-    {
-        // Intro Black Cutscene: Stop MainMenuMusic and Play Hospital Music
-        if (SceneManager.GetActiveScene().buildIndex == 3)
-        {
-            StopPlaying("mainmenuV1");
-            Play("Hospital");
-        }
-
-        // Zuzu Awakening Cutscene: Stop Hospital Music and Play Awakening/Welcome Music
-        if (SceneManager.GetActiveScene().buildIndex == 4)
-        {
-            StopPlaying(sounds[1].clip.name);
-            Play(sounds[2].clip.name);
-        }
-
-        // Corridor Level: Stop Awakening/Welcome Music and Play MainMenu Music
-        if (SceneManager.GetActiveScene().buildIndex == 5)
-        {
-            StopPlaying(sounds[2].clip.name);
-            Play(sounds[0].clip.name);
-        }
-
-        // Tent Level: Stop MainMenu Music and Play Inside Tent Music
-        if (SceneManager.GetActiveScene().buildIndex == 6)
-        {
-            StopPlaying(sounds[0].clip.name);
-            Play(sounds[3].clip.name);
-        }
-    }
+    
 
     public void Play(string name)
     {
@@ -101,6 +72,8 @@ public class AudioManager : MonoBehaviour
 
         // simply add the following code in any script: FindObjectOfType<AudioManager>().StopPlaying("AudioFileName");
     }
+
+    
 
 
 }

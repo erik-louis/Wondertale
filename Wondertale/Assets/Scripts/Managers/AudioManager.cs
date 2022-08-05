@@ -2,12 +2,16 @@
 using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class AudioManager : MonoBehaviour
 {
     public Sound[] sounds;
 
     public static AudioManager instance;
+
+    bool isDone = false;
+
 
     // Start is called before the first frame update
     void Awake()
@@ -35,12 +39,10 @@ public class AudioManager : MonoBehaviour
 
     void Start()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 0)
-        {
-            Play(sounds[0].clip.name);
-        }
-
+            Play("mainmenuv2");
     }
+
+    
 
     public void Play(string name)
     {
@@ -70,6 +72,8 @@ public class AudioManager : MonoBehaviour
 
         // simply add the following code in any script: FindObjectOfType<AudioManager>().StopPlaying("AudioFileName");
     }
+
+    
 
 
 }

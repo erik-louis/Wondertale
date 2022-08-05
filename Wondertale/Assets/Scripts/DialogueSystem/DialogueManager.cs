@@ -85,10 +85,10 @@ public class DialogueManager : MonoBehaviour
         currentIndex++;
 
         // Move Sprite of Characters except of Zuzu to the right side
-        if (speakerName.text == "Director")
+        if (speakerName.text == "Monsieur Caligari" || speakerName.text == "Sad Joe")
         {
             
-            speakerSpriteObject.GetComponent<RectTransform>().anchoredPosition = new Vector3(640, 151, 0);
+            speakerSpriteObject.GetComponent<RectTransform>().anchoredPosition = new Vector3(525, 151, 0);
         }
         else
         {

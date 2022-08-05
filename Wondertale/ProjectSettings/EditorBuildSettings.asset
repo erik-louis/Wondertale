@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Corridor.unity
     guid: ac755156605af9847809673c664cf5cf
   - enabled: 1
+    path: Assets/Scenes/Welcome_Mirage_Cutscene.unity
+    guid: 8a46cc545f6152842becbc86b54000ed
+  - enabled: 1
     path: Assets/Scenes/Main.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1

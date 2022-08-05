@@ -3,7 +3,12 @@ guid: 1fd0ebffb9516ab4dbe6055a6a01d05e
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_ChessFigures
+    second: {fileID: 2100000, guid: f177f7bf4120c9f4d842e1c268afce57, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

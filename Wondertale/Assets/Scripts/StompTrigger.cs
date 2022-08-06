@@ -12,7 +12,7 @@ public class StompTrigger : MonoBehaviour
         if (other.gameObject.tag == "Foot")
         {
             audioSource.PlayOneShot(audioClip);
-            Debug.Log("Hit Ground");
+            
         }
     }
 }

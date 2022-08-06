@@ -6,7 +6,7 @@ public class PlayWelcomeMusic : MonoBehaviour
 {
     void Awake()
     {
-        FindObjectOfType<AudioManager>().StopPlaying("mainmenuV1");
+        FindObjectOfType<AudioManager>().StopPlaying("mainmenuv2");
         FindObjectOfType<AudioManager>().Play("Awakening_Welcome");
     }
 }

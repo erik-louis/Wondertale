@@ -44,10 +44,38 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: mainmenuV1
-    clip: {fileID: 8300000, guid: 71a5b50e354b3d14f97867088d2b92fe, type: 3}
+  - name: mainmenuv2
+    clip: {fileID: 8300000, guid: 8360e373f7803c947920a6c085724f97, type: 3}
     mix: {fileID: 24300002, guid: 730bb505e24913b43949e997db098069, type: 2}
-    volume: 1
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Hospital
+    clip: {fileID: 8300000, guid: e88ea8f062d6c384b874ddca1514236e, type: 3}
+    mix: {fileID: 24300002, guid: 730bb505e24913b43949e997db098069, type: 2}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: Awakening_Welcome
+    clip: {fileID: 8300000, guid: 72d26d3a8f6a4be46aef9c426e7da70e, type: 3}
+    mix: {fileID: 24300002, guid: 730bb505e24913b43949e997db098069, type: 2}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Inside_the_Tent
+    clip: {fileID: 8300000, guid: b50badcc66888fa4fa3acf2b71932b1a, type: 3}
+    mix: {fileID: 24300002, guid: 730bb505e24913b43949e997db098069, type: 2}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}
+  - name: StompRoom
+    clip: {fileID: 8300000, guid: fe608ae0683fba34f9b241629b04b714, type: 3}
+    mix: {fileID: 24300002, guid: 730bb505e24913b43949e997db098069, type: 2}
+    volume: 0.3
     pitch: 1
     loop: 1
     source: {fileID: 0}

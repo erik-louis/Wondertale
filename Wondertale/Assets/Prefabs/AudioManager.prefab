@@ -79,3 +79,10 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: Corridor_Atmosphere
+    clip: {fileID: 8300000, guid: 2aca47d9ffb6da14cac36d1a242b2b75, type: 3}
+    mix: {fileID: 24300002, guid: 730bb505e24913b43949e997db098069, type: 2}
+    volume: 0.5
+    pitch: 1
+    loop: 1
+    source: {fileID: 0}

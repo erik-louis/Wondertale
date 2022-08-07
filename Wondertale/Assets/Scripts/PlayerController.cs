@@ -19,7 +19,13 @@ public class PlayerController : MonoBehaviour
     public Transform model;
     public static bool playerControlsEnabled = true;
     public GameObject navButton;
+    //[SerializeField] AudioSource animationSoundPlayer;
 
+
+    /*private void Start()
+    {
+        animationSoundPlayer = GetComponent<AudioSource>();
+    }*/
 
     private void Update()
     {
@@ -102,10 +108,13 @@ public class PlayerController : MonoBehaviour
                 animator.SetBool("isMoving", true);
                 Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
+                
+                
             }
             else
             {
                 animator.SetBool("isMoving", false);
+                
             }
 
             controller.Move(direction * Time.deltaTime);
@@ -128,6 +137,7 @@ public class PlayerController : MonoBehaviour
 
         {
             navButton.SetActive(true);
+            
         }
 
         // triggers death animation in stomping minigame
@@ -138,6 +148,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isFlat", true);
             transform.position = new Vector3(transform.position.x, 0.54f, transform.position.z);
             StartCoroutine(ReloadScene());
+
         }
 
        
@@ -148,6 +159,21 @@ public class PlayerController : MonoBehaviour
         yield return new WaitForSeconds(3f);
         playerControlsEnabled = true;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    private void LeftFootstepSound()
+    {
+        FindObjectOfType<AudioManager>().Play("WalkLeft");
+    }
+
+    private void RightFootstepSound()
+    {
+        FindObjectOfType<AudioManager>().Play("WalkRight");
+    }
+
+    private void JumpSound()
+    {
+        FindObjectOfType<AudioManager>().Play("Jump");
     }
 
 

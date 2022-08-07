@@ -86,3 +86,24 @@ MonoBehaviour:
     pitch: 1
     loop: 1
     source: {fileID: 0}
+  - name: WalkLeft
+    clip: {fileID: 8300000, guid: e56874407b4695c4a8c5d1c51ff6ad86, type: 3}
+    mix: {fileID: 24300002, guid: 730bb505e24913b43949e997db098069, type: 2}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: WalkRight
+    clip: {fileID: 8300000, guid: 2c69d5d8de543844282903685e79b543, type: 3}
+    mix: {fileID: 24300002, guid: 730bb505e24913b43949e997db098069, type: 2}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Jump
+    clip: {fileID: 8300000, guid: 6ac5e5da9e6cba4448a607fe99c044fb, type: 3}
+    mix: {fileID: 24300002, guid: 730bb505e24913b43949e997db098069, type: 2}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

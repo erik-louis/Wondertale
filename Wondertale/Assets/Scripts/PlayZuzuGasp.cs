@@ -18,6 +18,6 @@ public class PlayZuzuGasp : MonoBehaviour
     {
         yield return new WaitForSeconds(0.5f);
         FindObjectOfType<AudioManager>().Play("Zuzu_Gasp");
-        Debug.Log("Play Gasp");
+        
     }
 }

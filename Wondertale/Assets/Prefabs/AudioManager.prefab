@@ -107,3 +107,24 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Crawl
+    clip: {fileID: 8300000, guid: 21d7747606eaffc4ea1a1842f07aab23, type: 3}
+    mix: {fileID: 24300002, guid: 730bb505e24913b43949e997db098069, type: 2}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Zuzu_Hmm
+    clip: {fileID: 8300000, guid: 531d63a2f014c9c46aca74953fc9e84d, type: 3}
+    mix: {fileID: 24300002, guid: 730bb505e24913b43949e997db098069, type: 2}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Zuzu_Gasp
+    clip: {fileID: 8300000, guid: b91f5ba78e19ca64799d83f30318434f, type: 3}
+    mix: {fileID: 24300002, guid: 730bb505e24913b43949e997db098069, type: 2}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

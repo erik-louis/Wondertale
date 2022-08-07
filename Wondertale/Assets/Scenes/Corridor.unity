@@ -513,6 +513,7 @@ GameObject:
   - component: {fileID: 23027370}
   - component: {fileID: 23027369}
   - component: {fileID: 23027373}
+  - component: {fileID: 23027374}
   m_Layer: 0
   m_Name: Dialogue 1 Trigger Entrance
   m_TagString: Dialogue
@@ -610,6 +611,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   convo: {fileID: 11400000, guid: aef0ebf6735f94d4ba0cd68d35a1860c, type: 2}
+--- !u!114 &23027374
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 23027368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bfec1aa21bccf9428cd0dce9df72941, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &29891207
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7037,6 +7050,7 @@ GameObject:
   - component: {fileID: 400336498}
   - component: {fileID: 400336497}
   - component: {fileID: 400336496}
+  - component: {fileID: 400336501}
   m_Layer: 0
   m_Name: Dialogue 2 Trigger Jump
   m_TagString: Dialogue
@@ -7134,6 +7148,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 40
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &400336501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 400336495}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33935d84a805f6343b02093f9b53102e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &401950044
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7832,67 +7858,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 8304b303a064a5c4a8c10b7a1bb23a28, type: 3}
   m_PrefabInstance: {fileID: 1166650335}
   m_PrefabAsset: {fileID: 0}
---- !u!1001 &454443406
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 564639208226804176, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
-      propertyPath: m_RootOrder
-      value: 42
-      objectReference: {fileID: 0}
-    - target: {fileID: 564639208226804176, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 1006.6519
-      objectReference: {fileID: 0}
-    - target: {fileID: 564639208226804176, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 590.64703
-      objectReference: {fileID: 0}
-    - target: {fileID: 564639208226804176, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -108.82774
-      objectReference: {fileID: 0}
-    - target: {fileID: 564639208226804176, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 564639208226804176, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 564639208226804176, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 564639208226804176, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 564639208226804176, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 564639208226804176, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 564639208226804176, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 564639208226804178, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
-      propertyPath: m_Name
-      value: AudioManager
-      objectReference: {fileID: 0}
-    - target: {fileID: 564639208226804179, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
-      propertyPath: sounds.Array.data[0].volume
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: f0189b61ef5f3764fb44d73717281326, type: 3}
 --- !u!1 &455894846
 GameObject:
   m_ObjectHideFlags: 0
@@ -14166,6 +14131,7 @@ GameObject:
   - component: {fileID: 852386288}
   - component: {fileID: 852386287}
   - component: {fileID: 852386286}
+  - component: {fileID: 852386291}
   m_Layer: 0
   m_Name: Dialogue 3 Trigger Crouch
   m_TagString: Dialogue
@@ -14263,6 +14229,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 41
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &852386291
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 852386285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33935d84a805f6343b02093f9b53102e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &852734252
 PrefabInstance:
   m_ObjectHideFlags: 0

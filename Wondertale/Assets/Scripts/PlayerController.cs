@@ -176,5 +176,10 @@ public class PlayerController : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Jump");
     }
 
+    private void CrawlSound()
+    {
+        FindObjectOfType<AudioManager>().Play("Crawl");
+    }
+
 
 }

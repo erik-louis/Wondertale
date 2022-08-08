@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stomp Minigame.unity
     guid: 86fd8b1da84c47749be0cefbfd461958
+  - enabled: 1
+    path: Assets/Scenes/Thank You.unity
+    guid: 9b108938ddef12d47b3364865c37c22d
+  - enabled: 1
+    path: Assets/Scenes/Credits.unity
+    guid: f06622679cc69e046b8df32912fa1bc1
   m_configObjects: {}

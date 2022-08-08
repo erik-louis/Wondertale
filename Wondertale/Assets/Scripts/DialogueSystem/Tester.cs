@@ -17,8 +17,14 @@ public class Tester : MonoBehaviour
 
         {
             StartConvo();
-            Destroy(gameObject);
-            
+            StartCoroutine(Destroy());
+
         }
+    }
+
+    private IEnumerator Destroy()
+    {
+        yield return new WaitForSeconds(2f);
+        Destroy(gameObject);
     }
 }

@@ -6,6 +6,7 @@ public class PlayStompMusic : MonoBehaviour
 {
     void Awake()
     {
+        
         FindObjectOfType<AudioManager>().StopPlaying("Inside_the_Tent");
         FindObjectOfType<AudioManager>().Play("StompRoom");
     }

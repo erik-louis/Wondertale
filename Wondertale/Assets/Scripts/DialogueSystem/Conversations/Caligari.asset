@@ -21,3 +21,14 @@ MonoBehaviour:
     dialogue: (How come he knows my name?!)
   - speaker: {fileID: 11400000, guid: d3fbfe13dd107c641b0957ea449e6172, type: 2}
     dialogue: Don't be so shy, there is nothing to be worried about!
+  - speaker: {fileID: 11400000, guid: f297f80aeb63d5841a1c9b720e3f33f7, type: 2}
+    dialogue: We're currently doing preparations for the next show.
+  - speaker: {fileID: 11400000, guid: 30160b31a08f0834295074cca0d4703b, type: 2}
+    dialogue: But since you're already here, you might as well assist my subordinates.
+  - speaker: {fileID: 11400000, guid: 5a988238c7e8dc844b6e85131712816b, type: 2}
+    dialogue: Unfortunately, the quality of their work has lessened considerably
+      in recent times.
+  - speaker: {fileID: 11400000, guid: 5a988238c7e8dc844b6e85131712816b, type: 2}
+    dialogue: So it's good that you've shown up!
+  - speaker: {fileID: 11400000, guid: 0778cb0b7ca2caf4986e2bf00c9d6ca6, type: 2}
+    dialogue: Sure! I guess that's better than waiting.

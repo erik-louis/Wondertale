@@ -61,7 +61,21 @@ ModelImporter:
       mirror: 0
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
-      events: []
+      events:
+      - time: 0.4184852
+        functionName: LeftFootstepSound
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 774e2cb88e65cc849a3622d21af29906, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
+      - time: 0.92200553
+        functionName: RightFootstepSound
+        data: 
+        objectReferenceParameter: {fileID: 11500000, guid: 774e2cb88e65cc849a3622d21af29906, type: 3}
+        floatParameter: 0
+        intParameter: 0
+        messageOptions: 0
       transformMask: []
       maskType: 3
       maskSource: {instanceID: 0}

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: SadJoe_Sad
   m_EditorClassIdentifier: 
   allLines:
-  - speaker: {fileID: 11400000, guid: 35573b48cc864da4097a525ce29dd815, type: 2}
+  - speaker: {fileID: 11400000, guid: 7a62438f2b7c8b7479825811d85ff7ab, type: 2}
     dialogue: Oh, you poor thing, what happened to you? If you only could talk!
   - speaker: {fileID: 11400000, guid: b3d2953461750944c96945d782217c66, type: 2}
     dialogue: Well, i actually can talk!
@@ -21,3 +21,10 @@ MonoBehaviour:
     dialogue: What!? But how?
   - speaker: {fileID: 11400000, guid: b3d2953461750944c96945d782217c66, type: 2}
     dialogue: Honestly, i don't know, it just came to be.
+  - speaker: {fileID: 11400000, guid: b3d2953461750944c96945d782217c66, type: 2}
+    dialogue: ...
+  - speaker: {fileID: 11400000, guid: e19d896c3f46ee04daabd9239ee2d68c, type: 2}
+    dialogue: Listen, little girl, i'm very thirsty, please go and find me something
+      to drink.
+  - speaker: {fileID: 11400000, guid: d799d4017362f764dbc25dea8b0ed126, type: 2}
+    dialogue: Will do!

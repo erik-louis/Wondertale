@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 66113226e151fe94c9324986bcfdd245, type: 3}
-  m_Name: Monsieur Caligari
+  m_Name: SadJoe_Happy
   m_EditorClassIdentifier: 
-  speakerName: Monsieur Caligari
-  speakerSprite: {fileID: 21300000, guid: 0bb026a8e44354442b549ead908517ab, type: 3}
+  speakerName: Sad Joe
+  speakerSprite: {fileID: 21300000, guid: 6d0f94765fbadbc47bdb12d1c03b1eb2, type: 3}

@@ -33,6 +33,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Stomp Minigame.unity
     guid: 86fd8b1da84c47749be0cefbfd461958
   - enabled: 1
+    path: Assets/Scenes/2nd_Floor.unity
+    guid: 467328f5bba416543a1d7c9b70183283
+  - enabled: 1
     path: Assets/Scenes/Thank You.unity
     guid: 9b108938ddef12d47b3364865c37c22d
   - enabled: 1

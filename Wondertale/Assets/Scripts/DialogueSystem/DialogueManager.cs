@@ -22,6 +22,7 @@ public class DialogueManager : MonoBehaviour
     private void Awake()
     {
         
+
         //make sure that only one DialogueManager is active in the scene
         if (instance == null)
         {
@@ -53,14 +54,15 @@ public class DialogueManager : MonoBehaviour
         // After last dialogue line, close Box and enable Player Controls
         if (currentIndex > currentConvo.GetLength())
         {
-            // Load next Scene after Intro Dialogue Scene
-            if (speakerName.text == "Doctor")
+            // Load next Scene after Intro Dialogue Scene and last Dialogue of Game
+            if (speakerName.text == "Doctor" || speakerName.text == "Sunny")
             {
                 PlayerController.playerControlsEnabled = true;
                 currentLevelIndex = SceneManager.GetActiveScene().buildIndex;
                 SceneManager.LoadScene(currentLevelIndex += 1);
                 return;
             }
+
 
             instance.anim.SetBool("isOpen", false);
             StartCoroutine(EnableMovement());
@@ -85,15 +87,20 @@ public class DialogueManager : MonoBehaviour
         currentIndex++;
 
         // Move Sprite of Characters except of Zuzu to the right side
-        if (speakerName.text == "Monsieur Caligari" || speakerName.text == "Sad Joe")
+        if (speakerName.text == "Monsieur Caligari" || speakerName.text == "Sad Joe" || speakerName.text == "Sunny")
         {
-            
             speakerSpriteObject.GetComponent<RectTransform>().anchoredPosition = new Vector3(525, 151, 0);
         }
         else
         {
             speakerSpriteObject.GetComponent<RectTransform>().anchoredPosition = new Vector3(-650, 155, 0);
         }
+
+        // Play Dialogue Voices
+        /*if (speakerSprite.GetComponent<Image>().sprite.name == "Caligari_Angry")
+        {
+            StartCoroutine(PlayCaligariAngry());
+        }*/
         
 
         // Change Symbol of NavButton after last Dialogue
@@ -130,6 +137,13 @@ public class DialogueManager : MonoBehaviour
         yield return new WaitForSeconds(0.02f);
         PlayerController.playerControlsEnabled = true;
     }
+
+    /*private IEnumerator PlayCaligariAngry()
+    {
+        yield return new WaitForSeconds(0.5f);
+        FindObjectOfType<AudioManager>().Play("Caligari_Angry");
+
+    }*/
 
 
 }

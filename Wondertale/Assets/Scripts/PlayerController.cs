@@ -19,7 +19,7 @@ public class PlayerController : MonoBehaviour
     public Transform model;
     public static bool playerControlsEnabled = true;
     public GameObject navButton;
-    //[SerializeField] AudioSource animationSoundPlayer;
+    [SerializeField] GameObject pauseMenu;
 
 
     /*private void Start()
@@ -128,7 +128,10 @@ public class PlayerController : MonoBehaviour
             
         }
 
-
+        if (Input.GetButtonDown("Pause") || Input.GetKeyDown(KeyCode.Escape))
+        {
+            pauseMenu.SetActive(true);
+        }
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -151,7 +154,14 @@ public class PlayerController : MonoBehaviour
 
         }
 
-       
+        if (other.gameObject.tag == "Abyss")
+
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        }
+
+
     }
 
     private IEnumerator ReloadScene()
@@ -160,6 +170,8 @@ public class PlayerController : MonoBehaviour
         playerControlsEnabled = true;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+   
 
     private void LeftFootstepSound()
     {

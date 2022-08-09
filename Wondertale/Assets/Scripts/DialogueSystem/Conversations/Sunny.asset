@@ -25,7 +25,9 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 0778cb0b7ca2caf4986e2bf00c9d6ca6, type: 2}
     dialogue: Let me see, i might be able to help you.
   - speaker: {fileID: 11400000, guid: 93140edf415b0e3469d4e232fc6bf4b3, type: 2}
-    dialogue: '*Zuzu reassembles the pieces*'
+    dialogue: '*Zuzu reassembles the pieces*
+
+      [Minigame in development]'
   - speaker: {fileID: 11400000, guid: 7461be7a28b48224daafe3f124398014, type: 2}
     dialogue: Made it!
   - speaker: {fileID: 11400000, guid: cf127fc6345293f4a9dffaac0841504f, type: 2}
@@ -46,3 +48,5 @@ MonoBehaviour:
       with Caligari.
   - speaker: {fileID: 11400000, guid: 44a3acbff9ca02249b420370efc297e7, type: 2}
     dialogue: I find it unacceptable how he treats his employees!
+  - speaker: {fileID: 11400000, guid: cf127fc6345293f4a9dffaac0841504f, type: 2}
+    dialogue: Good luck, little one!

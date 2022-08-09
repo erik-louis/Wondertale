@@ -130,7 +130,6 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Pause") || Input.GetKeyDown(KeyCode.Escape))
         {
-            Debug.Log("Open Pause Menu");
             pauseMenu.SetActive(true);
         }
     }

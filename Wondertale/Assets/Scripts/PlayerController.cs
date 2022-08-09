@@ -151,7 +151,14 @@ public class PlayerController : MonoBehaviour
 
         }
 
-       
+        if (other.gameObject.tag == "Abyss")
+
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+
+        }
+
+
     }
 
     private IEnumerator ReloadScene()
@@ -160,6 +167,8 @@ public class PlayerController : MonoBehaviour
         playerControlsEnabled = true;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+   
 
     private void LeftFootstepSound()
     {

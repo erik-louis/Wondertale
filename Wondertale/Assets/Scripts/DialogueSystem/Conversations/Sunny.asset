@@ -46,3 +46,5 @@ MonoBehaviour:
       with Caligari.
   - speaker: {fileID: 11400000, guid: 44a3acbff9ca02249b420370efc297e7, type: 2}
     dialogue: I find it unacceptable how he treats his employees!
+  - speaker: {fileID: 11400000, guid: cf127fc6345293f4a9dffaac0841504f, type: 2}
+    dialogue: Good luck, little one!

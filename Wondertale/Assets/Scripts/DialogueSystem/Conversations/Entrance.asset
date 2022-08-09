@@ -22,6 +22,10 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: fe1a0a0fc82247a4f92bb2a2cc62bf63, type: 2}
     dialogue: ...
   - speaker: {fileID: 11400000, guid: fe1a0a0fc82247a4f92bb2a2cc62bf63, type: 2}
-    dialogue: "Speculating won't do no good, i'll have to see where this path leads
-      to. \n(Walk with W, A, S, D / Arrow Keys / Left Joystick/ D-Pad, \nRun with
-      holding Left Shift / X-Button)"
+    dialogue: Speculating won't do no good, i'll have to see where this path leads
+      to.
+  - speaker: {fileID: 11400000, guid: fe1a0a0fc82247a4f92bb2a2cc62bf63, type: 2}
+    dialogue: '[Walk: W, A, S, D / Arrow Keys / Left Joystick/ D-Pad]
+
+      [Run:
+      Hold Left Shift / X-Button]'

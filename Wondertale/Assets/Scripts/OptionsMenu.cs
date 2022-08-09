@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.Audio;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 
 public class OptionsMenu : MonoBehaviour
@@ -62,5 +63,10 @@ public class OptionsMenu : MonoBehaviour
     public void SetFullscreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
+    }
+
+    public void BackToMainMenu()
+    {
+        SceneManager.LoadScene("Main Menu");
     }
 }

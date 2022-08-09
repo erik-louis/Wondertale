@@ -68,5 +68,9 @@ public class OptionsMenu : MonoBehaviour
     public void BackToMainMenu()
     {
         SceneManager.LoadScene("Main Menu");
+        FindObjectOfType<AudioManager>().StopPlaying("Corridor_Atmosphere");
+        FindObjectOfType<AudioManager>().StopPlaying("StompRoom");
+        FindObjectOfType<AudioManager>().StopPlaying("Inside_the_Tent");
+        FindObjectOfType<AudioManager>().Play("mainmenuv2");
     }
 }

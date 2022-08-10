@@ -3,6 +3,7 @@ using UnityEngine.UI;
 using System.Collections;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class DialogueManager : MonoBehaviour
 {
@@ -17,7 +18,10 @@ public class DialogueManager : MonoBehaviour
     private static DialogueManager instance;
     private Animator anim;
     private Coroutine typing;
-    
+
+    [SerializeField] GameObject giveBottleQuestionPanel;
+    [SerializeField] Conversation sadJoeHappyConvo;
+    [SerializeField] Conversation sadJoeAngryConvo;
 
     private void Awake()
     {
@@ -63,6 +67,22 @@ public class DialogueManager : MonoBehaviour
                 return;
             }
 
+            // Open Question Panel after Dialogue with SadJoe
+            if (currentConvo.name == "SadJoe_Bottle")
+            {
+                instance.anim.SetBool("isOpen", false);
+                giveBottleQuestionPanel.SetActive(true);
+                EventSystem.current.SetSelectedGameObject(GameObject.Find("Yes"));
+                PlayerController.playerControlsEnabled = false;
+                return;
+            }
+
+            // Open SadJoe Helps Zuzu Cutscene after SadJoe Happy Convo
+            if (currentConvo.name == "SadJoe_Help_Zuzu")
+            {
+                SceneManager.LoadScene("");
+            }
+
 
             instance.anim.SetBool("isOpen", false);
             StartCoroutine(EnableMovement());
@@ -96,6 +116,8 @@ public class DialogueManager : MonoBehaviour
             speakerSpriteObject.GetComponent<RectTransform>().anchoredPosition = new Vector3(-650, 155, 0);
         }
 
+        
+
         // Play Dialogue Voices
         /*if (speakerSprite.GetComponent<Image>().sprite.name == "Caligari_Angry")
         {
@@ -108,6 +130,22 @@ public class DialogueManager : MonoBehaviour
         {
             navButtonText.text = "X";
         }
+    }
+
+    public void SelectYes()
+    {
+        giveBottleQuestionPanel.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(GameObject.Find("NavButton"));
+        StartConversation(sadJoeHappyConvo);
+
+    }
+
+    public void SelectNo()
+    {
+        giveBottleQuestionPanel.SetActive(false);
+        EventSystem.current.SetSelectedGameObject(GameObject.Find("NavButton"));
+        StartConversation(sadJoeAngryConvo);
+
     }
 
     // Text is being typed into the box

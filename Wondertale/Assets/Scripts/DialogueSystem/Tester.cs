@@ -6,10 +6,12 @@ public class Tester : MonoBehaviour
 {
     public Conversation convo;
     
+    
     public void StartConvo()
     {
         DialogueManager.StartConversation(convo);
     }
+
 
     private void OnTriggerEnter(Collider other)
     {
@@ -20,6 +22,7 @@ public class Tester : MonoBehaviour
             StartCoroutine(Destroy());
 
         }
+
     }
 
     private IEnumerator Destroy()

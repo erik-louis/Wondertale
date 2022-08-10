@@ -20,6 +20,8 @@ public class PlayerController : MonoBehaviour
     public static bool playerControlsEnabled = true;
     public GameObject navButton;
     [SerializeField] GameObject pauseMenu;
+    [SerializeField] GameObject bottleDialogue;
+    
 
 
     /*private void Start()
@@ -154,11 +156,20 @@ public class PlayerController : MonoBehaviour
 
         }
 
+        // Respawn after fall into abyss
         if (other.gameObject.tag == "Abyss")
 
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
 
+        }
+
+        // Activate Bottle Dialogue Object after finding Bottle
+        if (other.gameObject.tag == "Bottle")
+
+        {
+            bottleDialogue.SetActive(true);
+            Destroy(other.gameObject);
         }
 
 

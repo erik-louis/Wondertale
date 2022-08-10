@@ -31,7 +31,19 @@ public class VideoManager : MonoBehaviour
         } 
         while (--secondsLeft > 0);
 
-        SceneManager.LoadScene(currentLevelIndex +=1);
+        
+
+        if (currentLevelIndex == 11)
+        {
+            SceneManager.LoadScene("Main Menu");
+            
+        }
+
+        else
+        {
+            SceneManager.LoadScene(currentLevelIndex += 1);
+            
+        }
         
     }
 

@@ -20,6 +20,16 @@ public class LoadNextLevelTrigger : MonoBehaviour
         StartCoroutine(LoadScene(currentLevelIndex));
     }
 
+    public void LoadCredits()
+    {
+        StartCoroutine(Credits());
+    }
+
+    public void LoadMainMenu()
+    {
+        StartCoroutine(MainMenu());
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
@@ -43,5 +53,25 @@ public class LoadNextLevelTrigger : MonoBehaviour
     {
         Application.Quit();
         Debug.Log("Exit");
+    }
+
+    IEnumerator Credits()
+    {
+        transition.SetTrigger("StartFade");
+
+        yield return new WaitForSeconds(loadingTime);
+
+        SceneManager.LoadScene("Credits");
+
+    }
+
+    IEnumerator MainMenu()
+    {
+        transition.SetTrigger("StartFade");
+
+        yield return new WaitForSeconds(loadingTime);
+
+        SceneManager.LoadScene("Main Menu");
+
     }
 }

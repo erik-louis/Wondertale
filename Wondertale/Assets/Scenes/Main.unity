@@ -9794,6 +9794,8 @@ MonoBehaviour:
   giveBottleQuestionPanel: {fileID: 1330556305}
   sadJoeHappyConvo: {fileID: 11400000, guid: 14afad7f5ec295d4ca38a30a1c316010, type: 2}
   sadJoeAngryConvo: {fileID: 11400000, guid: e8c1c17bbc6b73b49b0ed1834dcee870, type: 2}
+  transition: {fileID: 7376473605575572611}
+  loadingTime: 1
 --- !u!95 &1829015004
 Animator:
   serializedVersion: 3
@@ -11802,3 +11804,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ab5669463343f8448ba3729552aaed61, type: 3}
+--- !u!95 &7376473605575572611 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 7376473604618008632, guid: ab5669463343f8448ba3729552aaed61, type: 3}
+  m_PrefabInstance: {fileID: 7376473605575572610}
+  m_PrefabAsset: {fileID: 0}

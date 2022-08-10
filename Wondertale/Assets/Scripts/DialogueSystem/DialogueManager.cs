@@ -23,6 +23,9 @@ public class DialogueManager : MonoBehaviour
     [SerializeField] Conversation sadJoeHappyConvo;
     [SerializeField] Conversation sadJoeAngryConvo;
 
+    [SerializeField] Animator transition;
+    public float loadingTime = 1f;
+
     private void Awake()
     {
         
@@ -80,7 +83,13 @@ public class DialogueManager : MonoBehaviour
             // Open SadJoe Helps Zuzu Cutscene after SadJoe Happy Convo
             if (currentConvo.name == "SadJoe_Help_Zuzu")
             {
-                SceneManager.LoadScene("");
+                StartCoroutine(LoadSadJoeHelpZuzuCutscene());
+            }
+
+            // Open Stomp Minigame after SadJoe Angry Convo
+            if (currentConvo.name == "SadJoe_Angry")
+            {
+                StartCoroutine(LoadStompingMinigame());
             }
 
 
@@ -182,6 +191,28 @@ public class DialogueManager : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Caligari_Angry");
 
     }*/
+    IEnumerator LoadSadJoeHelpZuzuCutscene()
+    {
+        
+        transition.SetTrigger("StartFade");
+
+        yield return new WaitForSeconds(loadingTime);
+
+        SceneManager.LoadScene("SadJoeHelpZuzuCutscene");
+
+    }
+
+    IEnumerator LoadStompingMinigame()
+    {
+
+        transition.SetTrigger("StartFade");
+
+        yield return new WaitForSeconds(loadingTime);
+
+        SceneManager.LoadScene("Stomp Minigame");
+
+    }
+
 
 
 }

@@ -15186,7 +15186,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7376473604295150230, guid: ab5669463343f8448ba3729552aaed61, type: 3}
       propertyPath: currentLevelIndex
-      value: 8
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7376473604295150231, guid: ab5669463343f8448ba3729552aaed61, type: 3}
       propertyPath: m_Size.y
@@ -30257,6 +30257,7 @@ MonoBehaviour:
   model: {fileID: 1705792697}
   navButton: {fileID: 825109310}
   pauseMenu: {fileID: 290416292}
+  bottleDialogue: {fileID: 0}
 --- !u!143 &1705792699
 CharacterController:
   m_ObjectHideFlags: 0
@@ -32662,6 +32663,9 @@ MonoBehaviour:
   navButtonText: {fileID: 1196229395}
   speakerSprite: {fileID: 1223105406}
   speakerSpriteObject: {fileID: 1223105404}
+  giveBottleQuestionPanel: {fileID: 0}
+  sadJoeHappyConvo: {fileID: 0}
+  sadJoeAngryConvo: {fileID: 0}
 --- !u!95 &1829015004
 Animator:
   serializedVersion: 3

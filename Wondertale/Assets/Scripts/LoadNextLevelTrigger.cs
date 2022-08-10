@@ -35,8 +35,21 @@ public class LoadNextLevelTrigger : MonoBehaviour
         if (other.gameObject.tag == "Player")
 
         {
-            LoadNextLevel();
+            if (currentLevelIndex == 12)
+            {
+                StartCoroutine(Thankyou());
+                Debug.Log("Load Thank You");
+            }
+
+            else
+            {
+                LoadNextLevel();
+            }
+            
+
         }
+
+        
     }
 
     IEnumerator LoadScene(int currentLevelIndex)
@@ -72,6 +85,16 @@ public class LoadNextLevelTrigger : MonoBehaviour
         yield return new WaitForSeconds(loadingTime);
 
         SceneManager.LoadScene("Main Menu");
+
+    }
+
+    IEnumerator Thankyou()
+    {
+        transition.SetTrigger("StartFade");
+
+        yield return new WaitForSeconds(loadingTime);
+
+        SceneManager.LoadScene("Thank You");
 
     }
 }

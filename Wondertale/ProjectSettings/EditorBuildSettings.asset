@@ -30,8 +30,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Main.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/Stomp Minigame.unity
-    guid: 86fd8b1da84c47749be0cefbfd461958
+    path: Assets/Scenes/SadJoeHelpZuzuCutscene.unity
+    guid: a2f16cb732937f84c9af4e630248feab
   - enabled: 1
     path: Assets/Scenes/2nd_Floor.unity
     guid: 467328f5bba416543a1d7c9b70183283
@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Credits.unity
     guid: f06622679cc69e046b8df32912fa1bc1
+  - enabled: 1
+    path: Assets/Scenes/Stomp Minigame.unity
+    guid: 86fd8b1da84c47749be0cefbfd461958
   m_configObjects: {}

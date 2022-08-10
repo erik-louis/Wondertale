@@ -6,7 +6,7 @@ public class PlayThankYouMusic : MonoBehaviour
 {
     void Awake()
     {
-        FindObjectOfType<AudioManager>().StopPlaying("Inside_the_Tent");
+        FindObjectOfType<AudioManager>().StopPlaying("StompRoom");
         FindObjectOfType<AudioManager>().Play("mainmenuv2");
     }
 }

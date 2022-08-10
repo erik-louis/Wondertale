@@ -3,7 +3,22 @@ guid: 11f1b0f04553a2047ba1e45bc637b387
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Beer
+    second: {fileID: 2100000, guid: 2cf52da2491c374438ea9efc27ff3dcd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Wine
+    second: {fileID: 2100000, guid: 2c6ad6ad9a0a28e4b85cb452a50013ac, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: W_Whiskey
+    second: {fileID: 2100000, guid: 3b6eaa7f49fde8f48934840a60cac622, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

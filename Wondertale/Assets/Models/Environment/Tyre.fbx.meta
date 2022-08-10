@@ -3,7 +3,12 @@ guid: 85d6af304cf7871429f1fb73cd2ecc77
 ModelImporter:
   serializedVersion: 21100
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: M_Tyre
+    second: {fileID: 2100000, guid: 6c7fa99fd42f3484297e48420639706f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

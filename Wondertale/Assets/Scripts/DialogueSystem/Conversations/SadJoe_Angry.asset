@@ -18,4 +18,4 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 93140edf415b0e3469d4e232fc6bf4b3, type: 2}
     dialogue: Animals shouldn't drink alcohol.
   - speaker: {fileID: 11400000, guid: b3d2953461750944c96945d782217c66, type: 2}
-    dialogue: Oh you wicked little imp, you will pay for it!
+    dialogue: Oh you wicked little imp, you will pay for this!

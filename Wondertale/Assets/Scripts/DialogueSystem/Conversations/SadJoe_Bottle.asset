@@ -17,6 +17,6 @@ MonoBehaviour:
     dialogue: Did you find something?
   - speaker: {fileID: 11400000, guid: 35573b48cc864da4097a525ce29dd815, type: 2}
     dialogue: Only this bottle of liquor...
-  - speaker: {fileID: 11400000, guid: 5cc550fa8f0aeb14cb2fe99e796d332d, type: 2}
+  - speaker: {fileID: 11400000, guid: b3d2953461750944c96945d782217c66, type: 2}
     dialogue: Perfect! You will hand it to me, won't you? After all, what is a wee
       girl like you going to do with something like that anyway?

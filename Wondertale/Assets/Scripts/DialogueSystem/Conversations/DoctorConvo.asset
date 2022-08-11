@@ -22,4 +22,4 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 0b713e04df3fc5845964f523861514d3, type: 2}
     dialogue: ...
   - speaker: {fileID: 11400000, guid: 0b713e04df3fc5845964f523861514d3, type: 2}
-    dialogue: Whew, we managed to stabilze her!
+    dialogue: Whew, we managed to stabilize her!

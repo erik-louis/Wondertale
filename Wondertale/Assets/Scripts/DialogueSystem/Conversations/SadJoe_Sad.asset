@@ -16,11 +16,11 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: 7a62438f2b7c8b7479825811d85ff7ab, type: 2}
     dialogue: Oh, you poor thing, what happened to you? If you only could talk!
   - speaker: {fileID: 11400000, guid: b3d2953461750944c96945d782217c66, type: 2}
-    dialogue: Well, i actually can talk!
+    dialogue: Well, I actually can talk!
   - speaker: {fileID: 11400000, guid: 7a62438f2b7c8b7479825811d85ff7ab, type: 2}
     dialogue: What!? But how?
   - speaker: {fileID: 11400000, guid: b3d2953461750944c96945d782217c66, type: 2}
-    dialogue: Honestly, i don't know, it just came to be.
+    dialogue: Honestly, I don't know, it just came to be.
   - speaker: {fileID: 11400000, guid: b3d2953461750944c96945d782217c66, type: 2}
     dialogue: ...
   - speaker: {fileID: 11400000, guid: e19d896c3f46ee04daabd9239ee2d68c, type: 2}

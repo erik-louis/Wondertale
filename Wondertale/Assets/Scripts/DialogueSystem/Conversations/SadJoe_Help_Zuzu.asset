@@ -17,5 +17,5 @@ MonoBehaviour:
     dialogue: Thank you! You've saved my day! A friend of mine sits further up in
       the circus.
   - speaker: {fileID: 11400000, guid: 5cc550fa8f0aeb14cb2fe99e796d332d, type: 2}
-    dialogue: You might want to have a chat with him. Don't worry, i'll get you up
+    dialogue: You might want to have a chat with him. Don't worry, I'll get you up
       there in no time!

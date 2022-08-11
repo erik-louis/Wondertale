@@ -20,10 +20,10 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: e2c59f1519044f64f8af472b49b8fe37, type: 2}
     dialogue: That's horrible!
   - speaker: {fileID: 11400000, guid: 3d6930c93b28ecb4b8c165a47f6a3765, type: 2}
-    dialogue: Now i can't get it back together because my eyes are full of tears!
+    dialogue: Now I can't get it back together because my eyes are full of tears!
       *BWAAH*
   - speaker: {fileID: 11400000, guid: 0778cb0b7ca2caf4986e2bf00c9d6ca6, type: 2}
-    dialogue: Let me see, i might be able to help you.
+    dialogue: Let me see, I might be able to help you.
   - speaker: {fileID: 11400000, guid: 93140edf415b0e3469d4e232fc6bf4b3, type: 2}
     dialogue: '*Zuzu reassembles the pieces*
 
@@ -44,7 +44,7 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: cf127fc6345293f4a9dffaac0841504f, type: 2}
     dialogue: '*Sunny hands some fire-crackers to Zuzu*'
   - speaker: {fileID: 11400000, guid: d799d4017362f764dbc25dea8b0ed126, type: 2}
-    dialogue: Thank you, i'll be careful. Nevertheless, i'll have to have a word
+    dialogue: Thank you, I'll be careful. Nevertheless, i'll have to have a word
       with Caligari.
   - speaker: {fileID: 11400000, guid: 44a3acbff9ca02249b420370efc297e7, type: 2}
     dialogue: I find it unacceptable how he treats his employees!

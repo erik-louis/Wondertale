@@ -29,7 +29,7 @@ public class OptionsMenu : MonoBehaviour
 
             for (int i = 0; i < resolutions.Length; i++)
             {
-                string option = resolutions[i].width + " x " + resolutions[i].height;
+                string option = resolutions[i].width + " x " + resolutions[i].height + " " + resolutions[i].refreshRate + " hz";
                 options.Add(option);
 
                 if (resolutions[i].width == Screen.width && resolutions[i].height == Screen.height)

@@ -128,3 +128,24 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Caligari_oho
+    clip: {fileID: 8300000, guid: a5a56fd3b4948a64aaf3d1b375292306, type: 3}
+    mix: {fileID: 24300002, guid: 730bb505e24913b43949e997db098069, type: 2}
+    volume: 0.6
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: SadJoe_Hmm
+    clip: {fileID: 8300000, guid: e8727e6ff38bd1f4191925660ef5966e, type: 3}
+    mix: {fileID: 24300002, guid: 730bb505e24913b43949e997db098069, type: 2}
+    volume: 0.3
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Sunny_Gasp
+    clip: {fileID: 8300000, guid: 6993b62ca5da5fe4d8a1647eed503f3f, type: 3}
+    mix: {fileID: 24300002, guid: 730bb505e24913b43949e997db098069, type: 2}
+    volume: 0.5
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

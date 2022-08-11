@@ -14092,6 +14092,8 @@ GameObject:
   - component: {fileID: 506932184}
   - component: {fileID: 506932183}
   - component: {fileID: 506932182}
+  - component: {fileID: 506932187}
+  - component: {fileID: 506932188}
   m_Layer: 0
   m_Name: SadJoeDialogueTrigger
   m_TagString: Dialogue
@@ -14189,6 +14191,30 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 39
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &506932187
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506932181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f325d2c8b97a5b94881b7eec0e0a0713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &506932188
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 506932181}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9bfec1aa21bccf9428cd0dce9df72941, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &507270209
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25134,6 +25160,7 @@ GameObject:
   - component: {fileID: 887569237}
   - component: {fileID: 887569236}
   - component: {fileID: 887569235}
+  - component: {fileID: 887569240}
   m_Layer: 0
   m_Name: SadJoeBottleDialogueTrigger
   m_TagString: Dialogue
@@ -25231,6 +25258,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 38
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &887569240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 887569234}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f325d2c8b97a5b94881b7eec0e0a0713, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &887657702
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25753,6 +25792,7 @@ GameObject:
   - component: {fileID: 912533855}
   - component: {fileID: 912533854}
   - component: {fileID: 912533853}
+  - component: {fileID: 912533858}
   m_Layer: 0
   m_Name: CaligariDialogueTrigger
   m_TagString: Dialogue
@@ -25850,6 +25890,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 48
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &912533858
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 912533852}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01397e4ccfc5b3640b65d8124245af0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &914168313
 PrefabInstance:
   m_ObjectHideFlags: 0

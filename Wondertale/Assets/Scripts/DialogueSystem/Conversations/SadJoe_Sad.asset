@@ -24,7 +24,7 @@ MonoBehaviour:
   - speaker: {fileID: 11400000, guid: b3d2953461750944c96945d782217c66, type: 2}
     dialogue: ...
   - speaker: {fileID: 11400000, guid: e19d896c3f46ee04daabd9239ee2d68c, type: 2}
-    dialogue: Listen, little girl, i'm very thirsty, please go and find me something
+    dialogue: Listen, little girl, I'm very thirsty, please go and find me something
       to drink.
   - speaker: {fileID: 11400000, guid: d799d4017362f764dbc25dea8b0ed126, type: 2}
     dialogue: Will do!

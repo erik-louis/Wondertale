@@ -285,7 +285,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aedc3dcee62baa645852c84c9c57ac64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currentLevelIndex: 3
+  currentLevelIndex: 7
   transition: {fileID: 7376473604618008632}
   loadingTime: 1
 --- !u!1 &7376473604618008629

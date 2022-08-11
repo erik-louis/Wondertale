@@ -11738,25 +11738,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 7376473604245320623, guid: ab5669463343f8448ba3729552aaed61, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7376473604295150225, guid: ab5669463343f8448ba3729552aaed61, type: 3}
       propertyPath: m_Name
       value: LevelLoader
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376473604295150225, guid: ab5669463343f8448ba3729552aaed61, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376473604295150228, guid: ab5669463343f8448ba3729552aaed61, type: 3}
-      propertyPath: m_Enabled
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7376473604295150230, guid: ab5669463343f8448ba3729552aaed61, type: 3}
-      propertyPath: currentLevelIndex
-      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 7376473604295150234, guid: ab5669463343f8448ba3729552aaed61, type: 3}
       propertyPath: m_RootOrder

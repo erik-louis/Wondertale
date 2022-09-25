@@ -5665,6 +5665,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 685684500}
     m_Modifications:
+    - target: {fileID: 1505527139313617096, guid: cfbba8a8fd7a64d4b8c9d50d00f59caa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 762f76a939340154fa8cf466c22e5429, type: 2}
     - target: {fileID: 3913345142492384319, guid: cfbba8a8fd7a64d4b8c9d50d00f59caa, type: 3}
       propertyPath: m_Name
       value: Box1 (5)
@@ -13245,6 +13249,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 685684500}
     m_Modifications:
+    - target: {fileID: 1505527139313617096, guid: cfbba8a8fd7a64d4b8c9d50d00f59caa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 762f76a939340154fa8cf466c22e5429, type: 2}
     - target: {fileID: 3913345142492384319, guid: cfbba8a8fd7a64d4b8c9d50d00f59caa, type: 3}
       propertyPath: m_Name
       value: Box1 (11)
@@ -13703,6 +13711,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 685684500}
     m_Modifications:
+    - target: {fileID: 1505527139313617096, guid: cfbba8a8fd7a64d4b8c9d50d00f59caa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 762f76a939340154fa8cf466c22e5429, type: 2}
     - target: {fileID: 3913345142492384319, guid: cfbba8a8fd7a64d4b8c9d50d00f59caa, type: 3}
       propertyPath: m_Name
       value: Box1 (9)
@@ -19730,6 +19742,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 685684500}
     m_Modifications:
+    - target: {fileID: 1505527139313617096, guid: cfbba8a8fd7a64d4b8c9d50d00f59caa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 762f76a939340154fa8cf466c22e5429, type: 2}
     - target: {fileID: 3913345142492384319, guid: cfbba8a8fd7a64d4b8c9d50d00f59caa, type: 3}
       propertyPath: m_Name
       value: Box1 (2)
@@ -19933,6 +19949,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 685684500}
     m_Modifications:
+    - target: {fileID: 1505527139313617096, guid: cfbba8a8fd7a64d4b8c9d50d00f59caa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 762f76a939340154fa8cf466c22e5429, type: 2}
     - target: {fileID: 3913345142492384319, guid: cfbba8a8fd7a64d4b8c9d50d00f59caa, type: 3}
       propertyPath: m_Name
       value: Box1 (12)
@@ -24020,6 +24040,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 685684500}
     m_Modifications:
+    - target: {fileID: 1505527139313617096, guid: cfbba8a8fd7a64d4b8c9d50d00f59caa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 762f76a939340154fa8cf466c22e5429, type: 2}
     - target: {fileID: 3913345142492384319, guid: cfbba8a8fd7a64d4b8c9d50d00f59caa, type: 3}
       propertyPath: m_Name
       value: Box1 (4)
@@ -28001,6 +28025,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 685684500}
     m_Modifications:
+    - target: {fileID: 1505527139313617096, guid: cfbba8a8fd7a64d4b8c9d50d00f59caa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 762f76a939340154fa8cf466c22e5429, type: 2}
     - target: {fileID: 3913345142492384319, guid: cfbba8a8fd7a64d4b8c9d50d00f59caa, type: 3}
       propertyPath: m_Name
       value: Box1 (7)
@@ -33957,6 +33985,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 685684500}
     m_Modifications:
+    - target: {fileID: 1505527139313617096, guid: cfbba8a8fd7a64d4b8c9d50d00f59caa, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 762f76a939340154fa8cf466c22e5429, type: 2}
     - target: {fileID: 3913345142492384319, guid: cfbba8a8fd7a64d4b8c9d50d00f59caa, type: 3}
       propertyPath: m_Name
       value: Box1 (1)

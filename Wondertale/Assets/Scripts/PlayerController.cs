@@ -156,7 +156,7 @@ public class PlayerController : MonoBehaviour
         if (inputTimer >= 120f)
         {
             inputTimer = 0;
-            SceneManager.LoadScene("Main Menu");
+            SceneManager.LoadScene("StartScreen");
             FindObjectOfType<AudioManager>().StopPlaying("Corridor_Atmosphere");
             FindObjectOfType<AudioManager>().StopPlaying("Inside_the_Tent");
             FindObjectOfType<AudioManager>().StopPlaying("StompRoom");

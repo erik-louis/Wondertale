@@ -73,6 +73,7 @@ public class DialogueManager : MonoBehaviour
             // Open Question Panel after Dialogue with SadJoe
             if (currentConvo.name == "SadJoe_Bottle")
             {
+                PlayerController.inputTimer = 0;
                 instance.anim.SetBool("isOpen", false);
                 giveBottleQuestionPanel.SetActive(true);
                 EventSystem.current.SetSelectedGameObject(GameObject.Find("Yes"));
@@ -160,6 +161,7 @@ public class DialogueManager : MonoBehaviour
     // Text is being typed into the box
     private IEnumerator TypeText(string text)
     {
+        PlayerController.inputTimer = 0;
         dialogue.text = "";
         bool complete = false;
         int index = 0;

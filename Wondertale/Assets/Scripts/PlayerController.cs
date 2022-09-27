@@ -21,16 +21,19 @@ public class PlayerController : MonoBehaviour
     public GameObject navButton;
     [SerializeField] GameObject pauseMenu;
     [SerializeField] GameObject bottleDialogue;
-    
+
+    public static float inputTimer;
 
 
-    /*private void Start()
+    private void Start()
     {
-        animationSoundPlayer = GetComponent<AudioSource>();
-    }*/
+        inputTimer = 0;
+    }
 
     private void Update()
     {
+        inputTimer += Time.deltaTime;
+
         //Player Movement when no Dialogue showing
         if (playerControlsEnabled)
         {
@@ -52,6 +55,7 @@ public class PlayerController : MonoBehaviour
             {
                 if (Input.GetKey(KeyCode.LeftControl) || Input.GetKey(KeyCode.JoystickButton4))
                 {
+                    inputTimer = 0;
                     animator.SetBool("isCrouching", true);
                     speed = 0.7f;
                     runSpeed = 1;
@@ -71,13 +75,14 @@ public class PlayerController : MonoBehaviour
 
                 if (Input.GetButtonDown("Jump"))
                 {
+                    inputTimer = 0;
                     direction.y = jumpForce;
                     
                 }
 
                 if (Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.JoystickButton2))
                 {
-
+                    inputTimer = 0;
                     runSpeed = 2;
                     animator.SetTrigger("Run");
 
@@ -107,6 +112,7 @@ public class PlayerController : MonoBehaviour
 
             if (movementDirection != Vector3.zero)
             {
+                inputTimer = 0;
                 animator.SetBool("isMoving", true);
                 Quaternion toRotation = Quaternion.LookRotation(movementDirection, Vector3.up);
                 transform.rotation = Quaternion.RotateTowards(transform.rotation, toRotation, rotationSpeed * Time.deltaTime);
@@ -132,7 +138,29 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetButtonDown("Pause") || Input.GetKeyDown(KeyCode.Escape))
         {
+            inputTimer = 0;
             pauseMenu.SetActive(true);
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            inputTimer = 0;
+        }
+
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            inputTimer = 0;
+        }
+
+        // Go back to Main Menu after 2 Minutes of inactive input
+        if (inputTimer >= 120f)
+        {
+            inputTimer = 0;
+            SceneManager.LoadScene("Main Menu");
+            FindObjectOfType<AudioManager>().StopPlaying("Corridor_Atmosphere");
+            FindObjectOfType<AudioManager>().StopPlaying("Inside_the_Tent");
+            FindObjectOfType<AudioManager>().StopPlaying("StompRoom");
+            FindObjectOfType<AudioManager>().Play("mainmenuv2");
         }
     }
     private void OnTriggerEnter(Collider other)

@@ -94,7 +94,8 @@ SubShader {
 		#include "TMPro_Properties.cginc"
 
 		struct vertex_t {
-			UNITY_VERTEX_INPUT_INSTANCE_ID
+			UNITY_VERTEX_
+				_INSTANCE_ID
 			float4	vertex			: POSITION;
 			float3	normal			: NORMAL;
 			fixed4	color			: COLOR;

@@ -16,6 +16,7 @@ public class MenuManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return) || Input.GetButtonDown("Cancel"))
         {
+            PlayerController.inputTimer = 0;
             CloseOptions();
         }
     }

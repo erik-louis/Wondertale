@@ -23609,6 +23609,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1583094562}
     m_Modifications:
+    - target: {fileID: 4570565511792201163, guid: ddcdfabb685590340ae1918fadc4aaf7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6196313849324769402, guid: ddcdfabb685590340ae1918fadc4aaf7, type: 3}
       propertyPath: m_RootOrder
       value: 7
@@ -23668,6 +23672,14 @@ PrefabInstance:
     - target: {fileID: 6824759045277502144, guid: ddcdfabb685590340ae1918fadc4aaf7, type: 3}
       propertyPath: m_Name
       value: Box4 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6824759045277502144, guid: ddcdfabb685590340ae1918fadc4aaf7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840809858312042397, guid: ddcdfabb685590340ae1918fadc4aaf7, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ddcdfabb685590340ae1918fadc4aaf7, type: 3}
@@ -27087,7 +27099,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 1
   m_Constraints: 0
-  m_CollisionDetection: 1
+  m_CollisionDetection: 2
 --- !u!4 &1712993650 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6196313849324769402, guid: ddcdfabb685590340ae1918fadc4aaf7, type: 3}
@@ -30311,6 +30323,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1583094562}
     m_Modifications:
+    - target: {fileID: 4570565511792201163, guid: ddcdfabb685590340ae1918fadc4aaf7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 6196313849324769402, guid: ddcdfabb685590340ae1918fadc4aaf7, type: 3}
       propertyPath: m_RootOrder
       value: 6
@@ -30366,6 +30382,14 @@ PrefabInstance:
     - target: {fileID: 6824759045277502144, guid: ddcdfabb685590340ae1918fadc4aaf7, type: 3}
       propertyPath: m_Name
       value: Box4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6824759045277502144, guid: ddcdfabb685590340ae1918fadc4aaf7, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 7840809858312042397, guid: ddcdfabb685590340ae1918fadc4aaf7, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8587994260906915236, guid: ddcdfabb685590340ae1918fadc4aaf7, type: 3}
       propertyPath: m_LocalScale.x

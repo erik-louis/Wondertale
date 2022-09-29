@@ -47,7 +47,7 @@ public class PlayerController : MonoBehaviour
 
             transform.Translate(movementDirection * speed * runSpeed * Time.deltaTime, Space.World);
 
-            bool isGrounded = Physics.CheckSphere(groundCheck.position, 0.15f, groundLayer);
+            bool isGrounded = Physics.CheckSphere(groundCheck.position, 0.3f, groundLayer);
 
             animator.SetBool("isGrounded", isGrounded);
 
